@@ -1,0 +1,1 @@
+# ncoin-front

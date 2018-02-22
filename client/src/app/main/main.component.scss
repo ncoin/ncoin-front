@@ -1,0 +1,276 @@
+@import "../../assets/scss/variables";
+
+.header {
+    min-width: 100vw;
+    height: 149px;
+    background: #000 url("../../assets/img/header-bg.png") no-repeat 50% top;
+
+    header {
+        max-width: $content-max-width;
+        height: 100%;
+        margin: 0 auto;
+        border-bottom: 1px solid #b9965f;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: flex-end;
+        align-items: flex-end;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+
+        ._logo {
+            -webkit-flex: none;
+            flex: none;
+            display: block;
+            width: 211px;
+            height: 149px;
+            background: url("../../assets/img/header-logo.png") no-repeat;
+        }
+
+        ._nav {
+            -webkit-flex: initial;
+            flex: initial;
+            list-style: none;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: flex-end;
+            align-items: flex-end;
+            margin: 0;
+            padding: 0 10px;
+
+            li {
+                margin: 0;
+                padding: 0 15px;
+                position: relative;
+
+                a {
+                    padding: 8px 3px;
+                    display: block;
+                    text-transform: uppercase;
+                    font-size: 1.125rem;
+                    letter-spacing: 0.1em;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                color: #fadca1;
+                transition: color 0.2s ease 0s;
+
+                &:not(._active) {
+                    &:hover {
+                        // color: #917143;
+
+                        &:before {
+                            height: 3px;
+                        }
+
+                        &:after {
+                            opacity: 1;
+                            bottom: -23px;
+                        }
+                    }
+                }
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 15px;
+                    right: 15px;
+                    height: 0;
+                    bottom: 0;
+                    background: #b9965f;
+                    transition: height 0.2s ease 0s;
+                }
+
+                &:after {
+                    content: '';
+                    display: block;
+                    opacity: 0;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    height: 100px;
+                    bottom: -26px;
+                    background: url('../../assets/img/header-menu-glow.png') no-repeat 50% bottom;
+                    transition: bottom 0.2s ease, opacity 0.2s ease;
+                }
+
+                &._active {
+                    &:before {
+                        height: 3px;
+                    }
+
+                    &:after {
+                        opacity: 1;
+                        bottom: -23px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section {
+    min-width: 100%;
+
+    > section {
+        display: block;
+        max-width: $content-max-width;
+        margin: 0 auto;
+    }
+
+    &._01 {
+        min-height: 892px;
+        background: #000 url('../../assets/img/section01-bg.png') no-repeat 50% bottom;
+        color: #fff;
+        position: relative;
+
+        > section {
+            display: -webkit-flex;
+            display: flex;
+
+            &._01 {
+                -webkit-align-items: flex-end;
+                align-items: flex-end;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                padding-top: 110px;
+
+                > ._intro {
+                    padding: 0 35px;
+
+                    ._title {
+                        margin: 0 0 1.6em 0;
+                        font-size: 1.3333rem;
+                        line-height: 1.25;
+                        color: #d4a772;
+                    }
+
+                    ._desc {
+                        font: 2.3333rem notoSerif;
+                        margin: 0;
+                    }
+                }
+
+                ._btn-area {
+                    padding: 0 3rem;
+
+                    ._btn {
+                        display: block;
+                        border: 1px solid #d4a772;
+                        min-height: 3.8666em;
+                        min-width: 230px;
+                        padding: 1em;
+                        font-size: 1em;
+                        line-height: 1.7;
+                        position: relative;
+                        text-align: center;
+
+                        + ._btn {
+                            margin-top: 1em;
+                        }
+
+                        &:before {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            height: 0;
+                            bottom: 0;
+                            background: #d4a772;
+                            transition: height 0.2s ease 0s;
+                        }
+
+                        &:after {
+                            content: '';
+                            display: block;
+                            opacity: 0;
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            height: 39px;
+                            bottom: -25px;
+                            background: url('../../assets/img/section01-btn-glow.png') no-repeat 50% bottom;
+                            transition: bottom 0.2s ease, opacity 0.2s ease;
+                        }
+
+                        &:hover {
+                            &:before {
+                                height: 3px;
+                            }
+
+                            &:after {
+                                opacity: 1;
+                                bottom: -22px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &._subscription {
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                bottom: 28px;
+                max-width: 565px;
+                height: 45px;
+                padding: 0 0 0 12px;
+                background: url('../../assets/svg/angle-hexagon-input-gold-stroke-left.svg') no-repeat top left;
+                background-size: 12px 100%;
+
+                input,
+                button {
+                    font: 1em poppin-light;
+                    padding: 0 1em;
+                }
+
+                input {
+                    width: 100%;
+                    height: 100%;
+                    padding-right: 2em;
+                    background: transparent;
+                    border: solid #d4a772;
+                    border-width: 1px 0;
+                    color: #ddcebd;
+                    -webkit-flex: 1;
+                    flex: 1;
+
+                    &::placeholder,
+                    &::-webkit-input-placeholder {
+                        color: #ddcebd;
+                        opacity: 1; /* Firefox */
+                    }
+
+                    &:-ms-input-placeholder,
+                    &::-ms-input-placeholder {
+                        color: #ddcebd;
+                        opacity: 1; /* Firefox */
+                    }
+                }
+
+                .submit {
+                    width: 150px;
+                    height: 100%;
+                    background:
+                            url('../../assets/svg/angle-hexagon-input-gold-fill-left.svg') no-repeat top left,
+                            url('../../assets/svg/angle-hexagon-input-gold-fill-right.svg') no-repeat top right;
+                    background-size: 12px 100%;
+                    padding: 0 12px;
+                    margin-left: -12px;
+
+                    button {
+                        width: 100%;
+                        height: 100%;
+                        background-color: #d4a772;
+                        border: none;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
