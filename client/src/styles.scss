@@ -3,7 +3,7 @@
 @import "assets/scss/mixins";
 
 @include font-face("poppin-extra-light", "./assets/font/Poppins-ExtraLight", normal, normal, eot woff ttf svg);
-@include font-face("poppin-light", "./assets/font/Poppins-Light", normal, normal, eot woff ttf svg);
+@include font-face("poppin-extra-light", "./assets/font/Poppins-Light", bold, normal, eot woff ttf svg);
 @include font-face("notoSerif", "./assets/font/NotoSerif", normal, normal, eot woff ttf svg);
 @include font-face("notoSerif", "./assets/font/NotoSerif-Bold", bold, normal, eot woff ttf svg);
 
@@ -20,6 +20,7 @@ html, body {
     font-size: $base-font-size;
     height: 100%;
     line-height: 1.5;
+    color: #272624;
 }
 
 html, body, input, button {

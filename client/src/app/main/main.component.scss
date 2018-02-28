@@ -110,17 +110,91 @@
     }
 }
 
-button {
+button._btn {
     display: block;
     border: 1px solid #d4a772;
     background: transparent;
     font-weight: bold;
     width: 100%;
     max-width: 230px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     height: 53px;
     margin: 20px auto;
     cursor: pointer;
+}
+
+._subscription {
+    width: calc(100% - 30px);
+    max-width: 565px;
+    display: -webkit-flex;
+    display: flex;
+    height: 45px;
+    padding: 0 0 0 12px;
+    background: url('../../assets/svg/angle-hexagon-input-gold-stroke-left.svg') no-repeat top left;
+    background-size: 12px 100%;
+
+    input,
+    button {
+        font-size: 1em;
+        padding: 0 1em;
+        font-weight: bold;
+    }
+
+    input {
+        width: 100%;
+        max-width: 415px;
+        height: 100%;
+        padding-right: 2em;
+        background: transparent;
+        border: solid #d4a772;
+        border-width: 1px 0;
+        color: #ddcebd;
+        -webkit-flex: 1;
+        flex: 1;
+
+        &::placeholder,
+        &::-webkit-input-placeholder {
+            color: #ddcebd;
+            opacity: 1; /* Firefox */
+        }
+
+        &:-ms-input-placeholder,
+        &::-ms-input-placeholder {
+            color: #ddcebd;
+            opacity: 1; /* Firefox */
+        }
+
+        &:focus {
+            &::placeholder,
+            &::-webkit-input-placeholder {
+                opacity: .5;
+            }
+
+            &:-ms-input-placeholder,
+            &::-ms-input-placeholder {
+                opacity: .5;
+            }
+        }
+    }
+
+    .submit {
+        width: 150px;
+        height: 100%;
+        background: url('../../assets/svg/angle-hexagon-input-gold-fill-left.svg') no-repeat top left,
+        url('../../assets/svg/angle-hexagon-input-gold-fill-right.svg') no-repeat top right;
+        background-size: 12px 100%;
+        padding: 0 12px;
+        margin-left: -12px;
+
+        button {
+            width: 100%;
+            height: 100%;
+            background-color: #d4a772;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
 }
 
 .section {
@@ -222,7 +296,7 @@ button {
     }
 
     &._02 {
-        margin-bottom: 80px;
+        padding-bottom: 50px;
 
         > section {
             max-width: $content-max-width - 40px;
@@ -250,85 +324,12 @@ button {
                     height: 1px;
                     margin: 0 -1px;
                 }
-
-                ._subscription {
-                    width: calc(100% - 30px);
-                    max-width: 565px;
-                    display: -webkit-flex;
-                    display: flex;
-                    height: 45px;
-                    padding: 0 0 0 12px;
-                    background: url('../../assets/svg/angle-hexagon-input-gold-stroke-left.svg') no-repeat top left;
-                    background-size: 12px 100%;
-
-                    input,
-                    button {
-                        font: 1em poppin-light;
-                        padding: 0 1em;
-                    }
-
-                    input {
-                        width: 100%;
-                        max-width: 415px;
-                        height: 100%;
-                        padding-right: 2em;
-                        background: transparent;
-                        border: solid #d4a772;
-                        border-width: 1px 0;
-                        color: #ddcebd;
-                        -webkit-flex: 1;
-                        flex: 1;
-
-                        &::placeholder,
-                        &::-webkit-input-placeholder {
-                            color: #ddcebd;
-                            opacity: 1; /* Firefox */
-                        }
-
-                        &:-ms-input-placeholder,
-                        &::-ms-input-placeholder {
-                            color: #ddcebd;
-                            opacity: 1; /* Firefox */
-                        }
-
-                        &:focus {
-                            &::placeholder,
-                            &::-webkit-input-placeholder {
-                                opacity: .5;
-                            }
-
-                            &:-ms-input-placeholder,
-                            &::-ms-input-placeholder {
-                                opacity: .5;
-                            }
-                        }
-                    }
-
-                    .submit {
-                        width: 150px;
-                        height: 100%;
-                        background: url('../../assets/svg/angle-hexagon-input-gold-fill-left.svg') no-repeat top left,
-                        url('../../assets/svg/angle-hexagon-input-gold-fill-right.svg') no-repeat top right;
-                        background-size: 12px 100%;
-                        padding: 0 12px;
-                        margin-left: -12px;
-
-                        button {
-                            width: 100%;
-                            height: 100%;
-                            background-color: #d4a772;
-                            border: none;
-                            color: #fff;
-                            cursor: pointer;
-                        }
-                    }
-                }
             }
 
             > h2 {
                 margin: 0;
                 color: #9E7747;
-                font: 1.8rem poppin-light;
+                font: 1.8rem;
                 letter-spacing: 0.1em;
 
                 > small {
@@ -349,8 +350,6 @@ button {
     }
 
     &._03 {
-        margin-bottom: 60px;
-
         background: url('../../assets/img/section03-bg.png') no-repeat 50% 50%;
         background-size: cover;
         min-height: 970px;
@@ -364,7 +363,7 @@ button {
             padding: 30px;
 
             h2 {
-                font: 1.2rem poppin-light;
+                font: 1.2rem;
                 letter-spacing: normal;
                 margin: 0 0 3rem;
             }
@@ -459,15 +458,13 @@ button {
     }
 
     &._04 {
-        margin-bottom: 80px;
-
         > section {
-            padding: 0 20px;
+            padding: 30px 20px;
 
             h2 {
                 text-align: center;
-                margin: 0 0 2em;
-                font: 1.8rem poppin-light;
+                margin: 1em 0;
+                font: 1.8rem;
                 color: #9E7747;
             }
 
@@ -506,14 +503,14 @@ button {
     &._05 {
         background: #23211f;
 
-        section {
-            padding: 20px;
+        > section {
+            padding: 30px 20px;
 
             h2 {
-                color: #9E7747;
-                font-size: 1.8rem;
                 text-align: center;
-                padding: 20px 0;
+                margin: 1em 0;
+                font: 1.8rem;
+                color: #9E7747;
             }
 
             > ul {
@@ -571,6 +568,268 @@ button {
 
             button {
                 color: #fff;
+            }
+        }
+    }
+
+    &._06 {
+        > section {
+            padding: 30px 20px;
+
+            > h2 {
+                text-align: center;
+                margin: 1em 0;
+                font-size: 1.8rem;
+                color: #9E7747;
+            }
+
+            > div {
+                padding: 40px 0;
+                border-top: 1px solid #d4a772;
+                border-bottom: 1px solid #d4a772;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-align-items: flex-start;
+                align-items: flex-start;
+                letter-spacing: normal;
+
+                > div {
+                    flex: 1;
+                    padding: 0 10px;
+
+                    &._summary {
+                        font-family: notoSerif;
+
+                        h3 {
+                            font-size: 1.2rem;
+                            letter-spacing: 0.2em;
+                            margin: 0 0 1em;
+                        }
+
+                        ul {
+                            list-style: none;
+                            margin: 0 0 3em;
+                            padding: 0;
+                            line-height: 1.6em;
+                        }
+
+                        p + :not(p) {
+                            margin-top: 2em;
+                        }
+                    }
+
+                    &._chart {
+                        table {
+                            width: 100%;
+                            font-weight: bold;
+                            border-spacing: 2px;
+                            margin-bottom: 50px;
+
+                            th, td {
+                                height: 30px;
+                                padding: 0 1em;
+                            }
+
+                            > thead {
+                                th {
+                                    background: #625B4F;
+                                }
+                            }
+
+                            > tbody {
+                                th {
+                                    background: #A8A991;
+                                }
+
+                                td {
+                                    text-align: right;
+                                    background: #DFD8CA;
+                                }
+                            }
+                        }
+
+                        ._pie {
+                            display: -webkit-flex;
+                            display: flex;
+                            -webkit-align-items: flex-start;
+                            align-items: flex-start;
+                            -webkit-justify-content: space-between;
+                            justify-content: space-between;
+
+                            > div {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &._07 {
+        background: #000 url('../../assets/img/section07-bg.jpg') no-repeat 50% top;
+
+        > section {
+            padding: 30px 20px 100px;
+
+            > h2 {
+                text-align: center;
+                margin: 1em 0;
+                padding-bottom: 1em;
+                font-size: 1.8rem;
+                color: #C3A177;
+                border-bottom: 1px solid #d4a772;
+            }
+
+            > ul {
+                font-family: notoSerif;
+                list-style: none;
+                margin: 0 -20px;
+                padding: 0;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                letter-spacing: normal;
+
+                > li {
+                    width: 24%;
+                    margin: 0;
+                    padding: 0;
+                    background: #E2E2E2;
+
+                    > h3 {
+                        border: 2px solid #D8B98B;
+                        background: #fff;
+                        text-align: center;
+                        font-size: 1.75rem;
+                        font-weight: normal;
+                        min-height: 110px;
+                        line-height: 106px;
+                        margin: 1.5rem 0.5rem;
+                        padding: 0 0.2em;
+
+                        &:before {
+                            content: '';
+                            display: inline-block;
+                            vertical-align: middle;
+                            height: 100%;
+                        }
+
+                        span {
+                            line-height: 1.2;
+                            vertical-align: middle;
+                            display: inline-block;
+                        }
+                    }
+
+                    > ul {
+                        border-top: 2px  solid #C3A574;
+                        list-style: disc;
+                        margin: 0;
+                        padding: 20px 10px 30px 30px;
+                        font-size: 0.9em;
+
+                        > li {
+                            margin: 0 0 1em 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &._08 {
+        > section {
+            padding: 30px 20px 100px;
+
+            > h2 {
+                margin: 0 auto;
+                padding: 0.5em 0;
+                font-size: 1.2rem;
+                border-bottom: 2px solid #272624;
+                width: fit-content;
+            }
+
+            > ul {
+                list-style: none;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+                letter-spacing: normal;
+                padding: 40px 0;
+                margin: 0;
+
+                > li {
+                    flex: 1;
+                    text-align: center;
+                    padding: 10px;
+
+                    h3 {
+                        font-family: notoSerif;
+                        font-weight: normal;
+                        margin: 2em 0;
+                    }
+
+                    ._linkedin {
+                        margin: 1em auto;
+                        display: block;
+                        width: fit-content;
+                    }
+
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &._09 {
+        background: #272624;
+
+        > section {
+            background: #323232;
+            padding: 25px 20px;
+
+            > h2 {
+                margin: 0 auto;
+                padding: 0.5em 0;
+                font-size: 1.1rem;
+                letter-spacing: 0.2rem;
+                color: #E3BB8A;
+            }
+
+            ._subscription {
+                margin: 10px auto;
+            }
+
+            ._telegram {
+                width: calc(100% - 30px);
+                max-width: 565px;
+                height: 45px;
+                background: url('../../assets/svg/angle-hexagon-input-gold-fill-left.svg') no-repeat top left,
+                url('../../assets/svg/angle-hexagon-input-gold-fill-right.svg') no-repeat top right;
+                background-size: 12px 100%;
+                padding: 0 12px;
+                margin: 10px auto;
+
+                button {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #d4a772;
+                    border: none;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+
+            ._copyright {
+                margin-top: 20px;
+                text-align: right;
+                color: #E5CDB1;
+                font-size: 0.95rem;
             }
         }
     }
