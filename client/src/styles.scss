@@ -4,8 +4,8 @@
 
 @include font-face("poppin-extra-light", "./assets/font/Poppins-ExtraLight", normal, normal, eot woff ttf svg);
 @include font-face("poppin-extra-light", "./assets/font/Poppins-Light", bold, normal, eot woff ttf svg);
-@include font-face("notoSerif", "./assets/font/NotoSerif", normal, normal, eot woff ttf svg);
-@include font-face("notoSerif", "./assets/font/NotoSerif-Bold", bold, normal, eot woff ttf svg);
+@include font-face("noto-serif", "./assets/font/NotoSerif", normal, normal, eot woff ttf svg);
+@include font-face("noto-serif", "./assets/font/NotoSerif-Bold", bold, normal, eot woff ttf svg);
 
 * {
     box-sizing: border-box;
@@ -17,7 +17,6 @@ html, body {
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: $base-font-size;
     height: 100%;
     line-height: 1.5;
     color: #272624;
@@ -27,13 +26,27 @@ html, body, input, button {
     font-family: $base-font-family;
     font-size: $base-font-size;
     letter-spacing: 0.1em;
+
+    @media (max-width: $media-width-l) {
+        font-size: $base-font-size * 0.95;
+    }
+
+    @media (max-width: $media-width-s) {
+        font-size: $base-font-size * 0.9;
+    }
 }
 
 article, aside, footer, header, hgroup, main, nav, section {
     display: block;
 }
 
-a {
+a, button {
     cursor: pointer;
     text-decoration: none;
+    color: inherit;
+
+    &:hover, &:focus, &:visited {
+        color: inherit;
+        text-decoration: none;
+    }
 }
