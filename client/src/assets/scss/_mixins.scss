@@ -42,3 +42,83 @@
         src: $src;
     }
 }
+
+@mixin hexagon-button($width, $max-width, $height, $edge-width) {
+    background: url('/assets/svg/angle-hexagon-input-gold-fill-left.svg') no-repeat top left,
+    url('/assets/svg/angle-hexagon-input-gold-fill-right.svg') no-repeat top right;
+    background-size: $edge-width 100%;
+    padding: 0 $edge-width;
+    height: $height;
+    max-width: $max-width;
+    width: $width;
+
+    button {
+        width: 100%;
+        height: 100%;
+        background-color: #d4a772;
+        border: none;
+        color: #fff;
+    }
+}
+
+@mixin hexagon-input($width, $max-width, $height, $edge-width) {
+    background: url('/assets/svg/angle-hexagon-input-gold-stroke-left.svg') no-repeat top left,
+    url('/assets/svg/angle-hexagon-input-gold-stroke-right.svg') no-repeat top right;
+    background-size: $edge-width 100%;
+    padding: 0 $edge-width;
+    height: $height;
+    max-width: $max-width;
+    width: $width;
+
+    input {
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        border: solid #d4a772;
+        border-width: 1px 0;
+        color: #fff;
+        padding: 0 $edge-width;
+
+        &::placeholder,
+        &::-webkit-input-placeholder {
+            color: #ddcebd;
+            opacity: 1; /* Firefox */
+        }
+
+        &:-ms-input-placeholder,
+        &::-ms-input-placeholder {
+            color: #ddcebd;
+            opacity: 1; /* Firefox */
+        }
+
+        &:focus {
+            &::placeholder,
+            &::-webkit-input-placeholder {
+                opacity: .5;
+            }
+
+            &:-ms-input-placeholder,
+            &::-ms-input-placeholder {
+                opacity: .5;
+            }
+        }
+    }
+}
+
+@mixin hexagon-input-button($width, $max-width, $button-width, $height, $edge-width) {
+    @include hexagon-input($width, $max-width, $height, $edge-width);
+
+    display: -webkit-flex;
+    display: flex;
+
+    input {
+        -webkit-flex: 1;
+        flex: 1;
+        padding: 0 $edge-width * 2 0 $edge-width;
+    }
+
+    ._btn {
+        @include hexagon-button($button-width, $button-width, $height, $edge-width);
+        margin: 0 $edge-width * -1;
+    }
+}
