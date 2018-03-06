@@ -20,7 +20,7 @@ section {
         margin: 0 auto;
     }
 
-    &._01 {
+    &._intro {
         height: 892px;
         background: #000 url('../../assets/img/section01-bg.png') no-repeat 50% bottom;
         color: #fff;
@@ -55,6 +55,7 @@ section {
             > ._intro {
                 @media (max-width: $media-width-l) {
                     width: 100%;
+                    max-width: calc(100% - 3em);
                 }
 
                 > h1 {
@@ -138,7 +139,7 @@ section {
         }
     }
 
-    &._02 {
+    &._intro_bottom {
         padding-bottom: 3em;
 
         > div {
@@ -186,7 +187,7 @@ section {
 
                 > small {
                     display: block;
-                    font: 1.6rem poppin-extra-light;
+                    font-weight: normal;
                     letter-spacing: normal;
                 }
             }
@@ -201,12 +202,13 @@ section {
         }
     }
 
-    &._03 {
+    &._difference {
         > div {
             h2 {
                 font-size: 1.2rem;
                 letter-spacing: normal;
                 margin: 0 0 3rem;
+                text-align: center;
             }
 
             > ul {
@@ -320,7 +322,7 @@ section {
         }
     }
 
-    &._04 {
+    &._comparison {
         > div {
             padding: 3em 0;
             width: calc(#{$content-max-width} - 2.5em);
@@ -400,7 +402,7 @@ section {
         }
     }
 
-    &._05 {
+    &._roadmap {
         background: #23211f;
 
         > div {
@@ -533,7 +535,7 @@ section {
         }
     }
 
-    &._06 {
+    &._tokensale {
         > div {
             padding: 2em 0;
             width: calc(#{$content-max-width} - 2.5em);
@@ -565,12 +567,16 @@ section {
                     flex: 1;
                     padding: 10px;
                     font-family: $article-font-family;
-                    display: -webkit-flex;
-                    display: flex;
-                    -webkit-flex-direction: column;
-                    flex-direction: column;
-                    -webkit-align-items: center;
-                    align-items: center;
+
+
+                    @media (max-width: $media-width-l) {
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-flex-direction: column;
+                        flex-direction: column;
+                        -webkit-align-items: center;
+                        align-items: center;
+                    }
 
                     h3 {
                         font-size: 1.2em;
@@ -578,13 +584,16 @@ section {
                         margin: 0 0 1em;
                         font-weight: normal;
 
-                        &:not(:first-of-type):before {
-                            content: '';
-                            display: block;
-                            background: #d4a772;
-                            margin: 0 auto 2em;
-                            width: 3em;
-                            height: 2px;
+
+                        @media (max-width: $media-width-l) {
+                            &:not(:first-of-type):before {
+                                content: '';
+                                display: block;
+                                background: #d4a772;
+                                margin: 0 auto 2em;
+                                width: 3em;
+                                height: 2px;
+                            }
                         }
                     }
 
@@ -651,7 +660,7 @@ section {
         }
     }
 
-    &._07 {
+    &._investment {
         background: #000;
 
         @media (min-width: $media-width-l + 1px) {
@@ -676,32 +685,10 @@ section {
                 padding: 0;
                 letter-spacing: normal;
 
-                @media (min-width: $media-width-l + 1px) {
-                    display: -webkit-flex;
-                    display: flex;
-                    -webkit-justify-content: space-between;
-                    justify-content: space-between;
-                    margin: 0 -2em;
-                }
-
-                @media (max-width: $media-width-l) {
-                    border: 1px solid #d4a772;
-                    padding: 1em;
-                }
-
                 > li {
-                    @media (min-width: $media-width-l + 1px) {
-                        width: 24%;
-                    }
-
                     margin: 0;
                     padding: 0;
                     background: #E2E2E2;
-
-                    @media (max-width: $media-width-l) {
-                        padding: 0.5em;
-                        margin-bottom: 0.5em;
-                    }
 
                     > h3 {
                         border: 2px solid #D8B98B;
@@ -719,30 +706,16 @@ section {
                         -webkit-align-items: center;
                         align-items: center;
 
-                        @media (max-width: $media-width-l) {
-                            margin: 0;
-                            height: 110px;
-                            padding: 0.2em;
-                        }
-
                         span {
                             line-height: 1.2;
                             vertical-align: middle;
                             display: block;
                             flex: 1;
-
-                            @media (max-width: $media-width-l) {
-                                display: block;
-                            }
                         }
                     }
 
                     > ul {
                         border-top: 2px  solid #C3A574;
-
-                        @media (max-width: $media-width-l) {
-                            border: none;
-                        }
                         list-style: disc;
                         margin: 0;
                         padding: 20px 10px 30px 30px;
@@ -753,11 +726,47 @@ section {
                         }
                     }
                 }
+
+                @media (min-width: $media-width-l + 1px) {
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-justify-content: space-between;
+                    justify-content: space-between;
+                    margin: 0 -2em;
+
+                    > li {
+                        width: 24%;
+                    }
+                }
+
+                @media (max-width: $media-width-l) {
+                    border: 1px solid #d4a772;
+                    padding: 1em;
+
+                    > li {
+                        padding: 0.5em;
+                        margin-bottom: 0.5em;
+
+                        > h3 {
+                            margin: 0;
+                            height: 110px;
+                            padding: 0.2em;
+
+                            > span {
+                                display: block;
+                            }
+                        }
+
+                        > ul {
+                            border: none;
+                        }
+                    }
+                }
             }
         }
     }
 
-    &._08 {
+    &._team {
         > div {
             padding: 2em 2em 7em;
 

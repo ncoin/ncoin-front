@@ -20,6 +20,7 @@ html, body {
     height: 100%;
     line-height: 1.5;
     color: #272624;
+    scroll-behavior: smooth;
 }
 
 html, body, input, button {
@@ -31,7 +32,7 @@ html, body, input, button {
         font-size: $base-font-size * 0.95;
     }
 
-    @media (max-width: $media-width-s) {
+    @media (max-width: $media-width-m) {
         font-size: $base-font-size * 0.9;
     }
 }
@@ -48,5 +49,17 @@ a, button {
     &:hover, &:focus, &:visited {
         color: inherit;
         text-decoration: none;
+    }
+}
+
+.hidden-m {
+    @media (max-width: $media-width-l) {
+        display: none;
+    }
+}
+
+.hidden-s {
+    @media (max-width: $media-width-m) {
+        display: none;
     }
 }

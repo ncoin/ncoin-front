@@ -8,6 +8,5 @@ import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent {
     constructor() {
-        console.log(1);
     }
 }
