@@ -11,7 +11,7 @@
     </div>
 </section>
 
-<section class="_intro_bottom">
+<section class="_intro_bottom" #_intro_bottom [ngClass]="{ '_visit': isViewing(_intro_bottom) }">
     <div>
         <div class="_header">
             <div class="_border"></div>
@@ -33,7 +33,7 @@
     </div>
 </section>
 
-<section class="_difference">
+<section class="_difference" #_difference [ngClass]="{ '_visit': isViewing(_difference) }" [ngStyle]="{ 'background-position': '50% ' + (elementBGY(_difference) * 0.9) + 'px' }">
     <div>
         <h2>{{ 'MAIN._DIFFERENCE.TITLE' | translate }}</h2>
         <ul>
@@ -59,17 +59,17 @@
     </div>
 </section>
 
-<section class="_comparison">
+<section #_comparison class="_comparison">
     <div>
         <h2>COMPARISON FACTSHEET</h2>
 
-        <dl>
-            <dt [innerHTML]="'MAIN._COMPARISON.VS_BITCOIN' | translate"></dt>
-            <dd [innerHTML]="'MAIN._COMPARISON.VS_BITCOIN_DESCRIPTION' | translate"></dd>
-            <dt [innerHTML]="'MAIN._COMPARISON.VS_ETHEREUM_MONERO' | translate"></dt>
-            <dd [innerHTML]="'MAIN._COMPARISON.VS_ETHEREUM_MONERO_DESCRIPTION' | translate"></dd>
-            <dt [innerHTML]="'MAIN._COMPARISON.VS_NEO_CARDANO' | translate"></dt>
-            <dd [innerHTML]="'MAIN._COMPARISON.VS_NEO_CARDANO_DESCRIPTION' | translate"></dd>
+        <dl [ngClass]="{ '_visit': isViewing(_comparison) }">
+            <dt><span [innerHTML]="'MAIN._COMPARISON.VS_BITCOIN' | translate"></span></dt>
+            <dd><span [innerHTML]="'MAIN._COMPARISON.VS_BITCOIN_DESCRIPTION' | translate"></span></dd>
+            <dt><span [innerHTML]="'MAIN._COMPARISON.VS_ETHEREUM_MONERO' | translate"></span></dt>
+            <dd><span [innerHTML]="'MAIN._COMPARISON.VS_ETHEREUM_MONERO_DESCRIPTION' | translate"></span></dd>
+            <dt><span [innerHTML]="'MAIN._COMPARISON.VS_NEO_CARDANO' | translate"></span></dt>
+            <dd><span [innerHTML]="'MAIN._COMPARISON.VS_NEO_CARDANO_DESCRIPTION' | translate"></span></dd>
         </dl>
 
         <button type="button" class="_btn">{{ 'MAIN.LEARN MORE' | translate }}</button>
@@ -81,15 +81,15 @@
     <div>
         <h2>{{ 'ROADMAP' | translate }}</h2>
 
-        <ul>
+        <ul #_roadmap [ngClass]="{ '_visit': isViewing(_roadmap) }">
             <li>
                 <h3><span [innerHTML]="'MAIN._DATE_YQ' | translate:{ 'Y': 2018, 'Q': 2 }"></span></h3>
                 <i></i>
                 <div>
                     <div [innerHTML]="'MAIN._ROADMAP.TITLE_01' | translate"></div>
                     <ul>
-                        <li>{{ 'MAIN._ROADMAP.DESCRIPTION_01_01' }}</li>
-                        <li>{{ 'MAIN._ROADMAP.DESCRIPTION_01_02' }}</li>
+                        <li>{{ 'MAIN._ROADMAP.DESCRIPTION_01_01' | translate }}</li>
+                        <li>{{ 'MAIN._ROADMAP.DESCRIPTION_01_02' | translate }}</li>
                     </ul>
                 </div>
             </li>
@@ -99,7 +99,7 @@
                 <div>
                     <div [innerHTML]="'MAIN._ROADMAP.TITLE_02' | translate"></div>
                     <ul>
-                        <li>{{ 'MAIN._ROADMAP.DESCRIPTION_02' }}</li>
+                        <li>{{ 'MAIN._ROADMAP.DESCRIPTION_02' | translate }}</li>
                     </ul>
                 </div>
             </li>
@@ -143,8 +143,7 @@
     </div>
 </section>
 
-<a id="tokensale" name="tokensale"></a>
-<section class="_tokensale">
+<section class="_tokensale" id="tokensale">
     <div>
         <h2>{{ 'MAIN.TOKEN SALE' | translate }}</h2>
         <ul>
@@ -234,7 +233,7 @@
 <section class="_investment">
     <div>
         <h2>{{ 'MAIN.Investment Highlights' | translate }}</h2>
-        <ul>
+        <ul #_investment [ngClass]="{ '_visit': isViewing(_investment) }">
             <li>
                 <h3><span>{{ 'MAIN.Company with History' | translate }}</span></h3>
                 <ul>
