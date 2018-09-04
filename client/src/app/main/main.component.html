@@ -1,318 +1,134 @@
 <section class="_intro">
-  <div>
-    <div class="_intro">
-      <h1 [innerHTML]="'MAIN._INTRO' | translate"></h1>
-    </div>
-    <div class="_btns">
-      <a><span>{{ 'MAIN.DOWNLOAD_WHITEPAPER' | translate }}</span></a>
-    </div>
-  </div>
+	<div>
+		<div class="_intro">
+			<h1 [innerHTML]="'MAIN._INTRO' | translate"></h1>
+		</div>
+		<div class="_btns">
+			<a><span>{{ 'MAIN.DOWNLOAD_WHITEPAPER' | translate }}</span></a>
+		</div>
+	</div>
 </section>
 
 <section class="_our_products" #_our_products [ngClass]="{ '_visit': isViewing(_our_products) }">
-  <div>
-    <div class="_header">
-      <h1>{{ 'MAIN._OUR_PRODUCTS.TITLE' | translate }}</h1>
-    </div>
+	<div>
+		<div class="_header">
+			<h1>{{ 'MAIN._OUR_PRODUCTS.TITLE' | translate }}</h1>
+		</div>
 
-    <ul>
-      <li class="_wallet">
-        <h2><img src="assets/img/section02_thumb01.png"></h2>
-        <p>{{ 'MAIN._OUR_PRODUCTS.NWALLET' | translate }}</p>
-      </li>
-      <li class="_poker">
-        <h2><img src="assets/img/section02_thumb02.png"></h2>
-        <p>{{ 'MAIN._OUR_PRODUCTS.NPOKER' | translate }}</p>
-      </li>
-      <li class="_casino">
-        <h2><img src="assets/img/section02_thumb03.png"></h2>
-        <p>{{ 'MAIN._OUR_PRODUCTS.NCASINO' | translate }}</p>
-      </li>
-    </ul>
-  </div>
+		<ul>
+			<li class="_wallet">
+				<h2><img src="assets/img/section02_thumb01.png"></h2>
+				<p>{{ 'MAIN._OUR_PRODUCTS.NWALLET' | translate }}</p>
+			</li>
+			<li class="_poker">
+				<h2><img src="assets/img/section02_thumb02.png"></h2>
+				<p>{{ 'MAIN._OUR_PRODUCTS.NPOKER' | translate }}</p>
+			</li>
+			<li class="_casino">
+				<h2><img src="assets/img/section02_thumb03.png"></h2>
+				<p>{{ 'MAIN._OUR_PRODUCTS.NCASINO' | translate }}</p>
+			</li>
+		</ul>
+	</div>
 </section>
 
 <section class="_mobile_apps" #_mobile_apps [ngClass]="{ '_visit': isViewing(_mobile_apps) }">
-  <div>
-    <ul>
-      <li class="_title01">
-        <div>{{ 'MAIN._MOBILE_APPS.TITLE01' | translate }}</div>
-      </li>
-      <li class="_title02">
-        <div>{{ 'MAIN._MOBILE_APPS.TITLE02' | translate }}</div>
-      </li>
-      <li class="_description">
-        <div>{{ 'MAIN._MOBILE_APPS.DESCRIPTION' | translate }}</div>
-      </li>
-      <li class="_appstore">
-        <div>
-          <a><img src="assets/img/btn-apple-appstore.png"></a>
-          <a><img src="assets/img/btn-google-playstore.png"></a>
-        </div>
-      </li>
-    </ul>
-  </div>
+	<div>
+		<ul>
+			<li class="_title01">
+				<div>{{ 'MAIN._MOBILE_APPS.TITLE01' | translate }}</div>
+			</li>
+			<li class="_title02">
+				<div>{{ 'MAIN._MOBILE_APPS.TITLE02' | translate }}</div>
+			</li>
+			<li class="_description">
+				<div>{{ 'MAIN._MOBILE_APPS.DESCRIPTION' | translate }}</div>
+			</li>
+			<li class="_appstore">
+				<a><img src="assets/img/btn-apple-appstore.png"></a>
+				<a><img src="assets/img/btn-google-playstore.png"></a>
+			</li>
+		</ul>
+	</div>
 </section>
 
-<section #_comparison class="_comparison">
-  <div>
-    <h2>COMPARISON FACTSHEET</h2>
+<section #_features class="_features">
+	<div>
+		<h2>{{ 'MAIN._FEATURES.TITLE' | translate }}</h2>
 
-    <dl [ngClass]="{ '_visit': isViewing(_comparison) }">
-      <dt><span [innerHTML]="'MAIN._COMPARISON.VS_BITCOIN' | translate"></span></dt>
-      <dd><span [innerHTML]="'MAIN._COMPARISON.VS_BITCOIN_DESCRIPTION' | translate"></span></dd>
-      <dt><span [innerHTML]="'MAIN._COMPARISON.VS_ETHEREUM_MONERO' | translate"></span></dt>
-      <dd><span [innerHTML]="'MAIN._COMPARISON.VS_ETHEREUM_MONERO_DESCRIPTION' | translate"></span></dd>
-      <dt><span [innerHTML]="'MAIN._COMPARISON.VS_NEO_CARDANO' | translate"></span></dt>
-      <dd><span [innerHTML]="'MAIN._COMPARISON.VS_NEO_CARDANO_DESCRIPTION' | translate"></span></dd>
-    </dl>
+		<div [ngClass]="{ '_visit': isViewing(_features) }">
+			<ul class="_sub">
+				<li>
+					<p><img src="assets/img/section04_icon01.png"></p>
+					<p>{{ 'MAIN._FEATURES.SUB01' | translate }}</p>
+				</li>
+				<li>
+					<p><img src="assets/img/section04_icon02.png"></p>
+					<p>{{ 'MAIN._FEATURES.SUB02' | translate }}</p>
+				</li>
+				<li>
+					<p><img src="assets/img/section04_icon03.png"></p>
+					<p>{{ 'MAIN._FEATURES.SUB03' | translate }}</p>
+				</li>
+			</ul>
 
-    <button type="button" class="_btn">{{ 'MAIN.LEARN MORE' | translate }}</button>
-  </div>
+			<ul class="_detail">
+				<li>
+					<img src="assets/img/section04_icon11.png" align="left">
+					<h3>{{ 'MAIN._FEATURES.LOAN_TITLE' | translate }}</h3>
+					<p [innerHTML]="'MAIN._FEATURES.LOAN_DESCRIPTION' | translate"></p>
+				</li>
+				<li>
+					<img src="assets/img/section04_icon12.png" align="left">
+					<h3>{{ 'MAIN._FEATURES.BUY_TITLE' | translate }}</h3>
+					<p [innerHTML]="'MAIN._FEATURES.BUY_DESCRIPTION' | translate"></p>
+				</li>
+			</ul>
+		</div>
+	</div>
 </section>
 
 <a name="_roadmap"></a>
-<section class="_roadmap">
-  <div>
-    <h2>{{ 'ROADMAP' | translate }}</h2>
+<section #_roadmap class="_roadmap">
+	<div>
+		<h2>{{ 'MAIN._ROADMAP.TITLE' | translate }}</h2>
 
-    <ul #_roadmap [ngClass]="{ '_visit': isViewing(_roadmap) }">
-      <li>
-        <h3><span [innerHTML]="'MAIN._DATE_YQ' | translate:{ 'Y': 2018, 'Q': 2 }"></span></h3>
-        <i></i>
-        <div>
-          <div [innerHTML]="'MAIN._ROADMAP.TITLE_01' | translate"></div>
-          <ul>
-            <li>{{ 'MAIN._ROADMAP.DESCRIPTION_01_01' | translate }}</li>
-            <li>{{ 'MAIN._ROADMAP.DESCRIPTION_01_02' | translate }}</li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <h3><span [innerHTML]="'MAIN._DATE_YQ' | translate:{ 'Y': 2018, 'Q': 3 }"></span></h3>
-        <i></i>
-        <div>
-          <div [innerHTML]="'MAIN._ROADMAP.TITLE_02' | translate"></div>
-          <ul>
-            <li>{{ 'MAIN._ROADMAP.DESCRIPTION_02' | translate }}</li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <h3><span [innerHTML]="'MAIN._DATE_YQ' | translate:{ 'Y': 2018, 'Q': 4 }"></span></h3>
-        <i></i>
-        <div>
-          <div [innerHTML]="'MAIN._ROADMAP.TITLE_03' | translate"></div>
-          <ul>
-            <li>{{ 'MAIN._ROADMAP.DESCRIPTION_03_01' | translate }}</li>
-            <li>{{ 'MAIN._ROADMAP.DESCRIPTION_03_02' | translate }}</li>
-            <li>{{ 'MAIN._ROADMAP.DESCRIPTION_03_03' | translate }}</li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <h3><span [innerHTML]="'MAIN._DATE_YQ' | translate:{ 'Y': 2019, 'Q': 2 }"></span></h3>
-        <i></i>
-        <div>
-          <div [innerHTML]="'MAIN._ROADMAP.TITLE_04' | translate"></div>
-          <ul>
-            <li>{{ 'MAIN._ROADMAP.DESCRIPTION_04_01' | translate }}</li>
-            <li>{{ 'MAIN._ROADMAP.DESCRIPTION_04_02' | translate }}</li>
-            <li>{{ 'MAIN._ROADMAP.DESCRIPTION_04_03' | translate }}</li>
-            <li>{{ 'MAIN._ROADMAP.DESCRIPTION_04_04' | translate }}</li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <h3><span [innerHTML]="'MAIN._DATE_YQ' | translate:{ 'Y': 2019, 'Q': 4 }"></span></h3>
-        <i></i>
-        <div>
-          <div [innerHTML]="'MAIN._ROADMAP.TITLE_05' | translate"></div>
-          <ul>
-            <li>{{ 'MAIN._ROADMAP.DESCRIPTION_05' | translate }}</li>
-          </ul>
-        </div>
-      </li>
-    </ul>
-    <button type="button" class="_btn">{{ 'MAIN.MORE' | translate }}</button>
-  </div>
-</section>
-
-<section class="_tokensale" id="tokensale">
-  <div>
-    <h2>{{ 'MAIN.TOKEN SALE' | translate }}</h2>
-    <ul>
-      <li class="_summary">
-        <h3>{{ 'MAIN.PRE SALE' | translate }}</h3>
-        <ul>
-          <li><strong>{{ 'MAIN.Start Date' | translate }}:</strong> 15 April 2018 (00:00 UTC+0)</li>
-          <li><strong>{{ 'MAIN.End Date' | translate }}:</strong> 14 May 2018 (23:59 UTC+0)</li>
-        </ul>
-        <h3>{{ 'MAIN.TOKEN SALE' | translate }}</h3>
-        <ul>
-          <li><strong>{{ 'MAIN.Start Date' | translate }}:</strong> 15 April 2018 (00:00 UTC+0)</li>
-          <li><strong>{{ 'MAIN.End Date' | translate }}:</strong> 14 May 2018 (23:59 UTC+0)</li>
-        </ul>
-
-        <p>{{ 'MAIN._TOKENSALE.DESCRIPTION_01' | translate }}</p>
-        <p>{{ 'MAIN._TOKENSALE.DESCRIPTION_02' | translate }}</p>
-
-        <h3>BONUS</h3>
-        <p>{{ 'MAIN._TOKENSALE.DESCRIPTION_03' | translate }}</p>
-      </li>
-      <li class="_chart">
-        <table>
-          <thead>
-          <tr>
-            <th colspan="2"></th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th>{{ 'MAIN.Token Price' | translate }}</th>
-            <td>$0.25</td>
-          </tr>
-          <tr>
-            <th>{{ 'MAIN.Token Name' | translate }}</th>
-            <td>NCoin</td>
-          </tr>
-          <tr>
-            <th>{{ 'MAIN.Ticket Name' | translate }}</th>
-            <td>NCN</td>
-          </tr>
-          <tr>
-            <th>{{ 'MAIN.Technology' | translate }}</th>
-            <td>ERC20 Ethereum</td>
-          </tr>
-          <tr>
-            <th>{{ 'MAIN.Type of Supply' | translate }}</th>
-            <td>{{ 'MAIN.Fixed' | translate }}</td>
-          </tr>
-          <tr>
-            <th>{{ 'MAIN.Token Features' | translate }}</th>
-            <td>{{ 'MAIN.Anonymous, Pos, N-Fair' | translate }}</td>
-          </tr>
-          <tr>
-            <th>{{ 'MAIN.Total Supply' | translate }}</th>
-            <td>{{ 'MAIN._NCN_TOKEN_AMOUNT' | translate: {'amount': '800,000,000'} }}</td>
-          </tr>
-          <tr>
-            <th>{{ 'MAIN.Soft Cap' | translate }}</th>
-            <td>{{ 'MAIN._NCN_TOKEN_AMOUNT' | translate: {'amount': '80,000,000'} }}</td>
-          </tr>
-          <tr>
-            <th>{{ 'MAIN.Hard Cap' | translate }}</th>
-            <td>{{ 'MAIN._NCN_TOKEN_AMOUNT' | translate: {'amount': '520,000,000'} }}</td>
-          </tr>
-          <tr>
-            <th>{{ 'MAIN.TGE Date' | translate }}</th>
-            <td>{{ 'MAIN._DATE_RANGE_DMY' | translate: {'D1': 15, 'M1': 'May', 'D2': 15, 'M2': 'June', 'Y': 2018} }}
-            </td>
-          </tr>
-          <tr>
-            <th>{{ 'MAIN.Accepted Currency' | translate }}</th>
-            <td>{{ 'MAIN.BTC, ETH, and 30+ altcoins' | translate }}</td>
-          </tr>
-          </tbody>
-        </table>
-
-        <div class="_pie">
-          <div><img src="/assets/img/section06-chart01.png"></div>
-          <div><img src="/assets/img/section06-chart02.png"></div>
-        </div>
-      </li>
-    </ul>
-    <button type="button" class="_btn">{{ 'MAIN.TOKEN SALE DETAILS' | translate }}</button>
-  </div>
-</section>
-
-<section class="_investment">
-  <div>
-    <h2>{{ 'MAIN.Investment Highlights' | translate }}</h2>
-    <ul #_investment [ngClass]="{ '_visit': isViewing(_investment) }">
-      <li>
-        <h3><span>{{ 'MAIN.Company with History' | translate }}</span></h3>
-        <ul>
-          <li>{{ 'MAIN._INVESTMENT.DESCRIPTION_01_01' | translate }}</li>
-          <li>{{ 'MAIN._INVESTMENT.DESCRIPTION_01_02' | translate }}</li>
-          <li>{{ 'MAIN._INVESTMENT.DESCRIPTION_01_03' | translate }}</li>
-        </ul>
-      </li>
-      <li>
-        <h3><span>{{ 'MAIN.Exchange Listing' | translate }}</span></h3>
-        <ul>
-          <li>{{ 'MAIN._INVESTMENT.DESCRIPTION_02_01' | translate }}</li>
-          <li>{{ 'MAIN._INVESTMENT.DESCRIPTION_02_02' | translate }}</li>
-          <li>{{ 'MAIN._INVESTMENT.DESCRIPTION_02_03' | translate }}</li>
-        </ul>
-      </li>
-      <li>
-        <h3><span>{{ 'MAIN.N-PoS Staking Program' | translate }}</span></h3>
-        <ul>
-          <li>{{ 'MAIN._INVESTMENT.DESCRIPTION_03_01' | translate }}</li>
-          <li>{{ 'MAIN._INVESTMENT.DESCRIPTION_03_02' | translate }}</li>
-        </ul>
-      </li>
-      <li>
-        <h3><span>{{ 'MAIN.NGP Revenue Return' | translate }}</span></h3>
-        <ul>
-          <li>{{ 'MAIN._INVESTMENT.DESCRIPTION_04_01' | translate }}</li>
-          <li>{{ 'MAIN._INVESTMENT.DESCRIPTION_04_02' | translate }}</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="_team">
-  <div>
-    <h2><p [innerHTML]="'MAIN.TEAM' | translate"></h2>
-    <ul>
-      <li>
-        <img src="/assets/img/team/michael.png">
-        <div>
-          <h3>Michael Kim</h3>
-
-          <a href="" class="_linkedin"><img src="/assets/img/linkedin.png"></a>
-          <p [innerHTML]="'MAIN.Founder & Managing Director' | translate"></p>
-        </div>
-      </li>
-      <li>
-        <img src="/assets/img/team/daniel.png">
-        <div>
-          <h3>Daniel Lim</h3>
-
-          <a href="" class="_linkedin"><img src="/assets/img/linkedin.png"></a>
-          <p [innerHTML]="'MAIN.Co-Founder & Product Director' | translate"></p>
-        </div>
-      </li>
-      <li>
-        <img src="/assets/img/team/jesse.png">
-        <div>
-          <h3>Jesse Noh</h3>
-
-          <a href="" class="_linkedin"><img src="/assets/img/linkedin.png"></a>
-          <p [innerHTML]="'MAIN.Chief Intelligence Office' | translate"></p>
-        </div>
-      </li>
-      <li>
-        <img src="/assets/img/team/gilbert.png">
-        <div>
-          <h3>Gilbert Gil</h3>
-
-          <a href="" class="_linkedin"><img src="/assets/img/linkedin.png"></a>
-          <p [innerHTML]="'MAIN.Chief Technical Officer' | translate"></p>
-        </div>
-      </li>
-      <li>
-        <img src="/assets/img/team/sean.png">
-        <div>
-          <h3>Sean Kim</h3>
-
-          <a href="" class="_linkedin"><img src="/assets/img/linkedin.png"></a>
-          <p [innerHTML]="'MAIN.Chief Financial Officer' | translate"></p>
-        </div>
-      </li>
-    </ul>
-  </div>
+		<table [ngClass]="{ '_visit': isViewing(_roadmap) }">
+			<thead>
+			<tr>
+				<th><img src="assets/img/roadmap_01.png"></th>
+				<th><img src="assets/img/roadmap_02.png"></th>
+				<th><img src="assets/img/roadmap_03.png"></th>
+				<th><img src="assets/img/roadmap_04.png"></th>
+				<th><img src="assets/img/roadmap_05.png"></th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<th [innerHTML]="'MAIN._ROADMAP.TITLE_01' | translate"></th>
+				<th [innerHTML]="'MAIN._ROADMAP.TITLE_02' | translate"></th>
+				<th [innerHTML]="'MAIN._ROADMAP.TITLE_03' | translate"></th>
+				<th [innerHTML]="'MAIN._ROADMAP.TITLE_04' | translate"></th>
+				<th [innerHTML]="'MAIN._ROADMAP.TITLE_05' | translate"></th>
+			</tr>
+			<tr>
+				<td>
+					<p>{{ 'MAIN._ROADMAP.DESCRIPTION_01' | translate }}</p>
+				</td>
+				<td>
+					<p>{{ 'MAIN._ROADMAP.DESCRIPTION_02_01' | translate }}</p>
+					<p>{{ 'MAIN._ROADMAP.DESCRIPTION_02_02' | translate }}</p>
+				</td>
+				<td>
+					<p>{{ 'MAIN._ROADMAP.DESCRIPTION_03_01' | translate }}</p>
+					<p>{{ 'MAIN._ROADMAP.DESCRIPTION_03_02' | translate }}</p>
+					<p>{{ 'MAIN._ROADMAP.DESCRIPTION_03_03' | translate }}</p>
+					<p>{{ 'MAIN._ROADMAP.DESCRIPTION_03_04' | translate }}</p>
+				</td>
+				<td></td>
+				<td></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
 </section>

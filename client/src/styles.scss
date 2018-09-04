@@ -29,7 +29,6 @@ html, body {
 html, body, input, button {
     font-family: $base-font-family;
     font-size: $base-font-size;
-    letter-spacing: 0.1em;
 
     @media (max-width: $media-width-l) {
         font-size: $base-font-size * 0.95;

@@ -1,112 +1,50 @@
 {
-  "HEADER": {
-    "HOME": "HOME",
-    "ABOUT": "ABOUT",
-    "PRODUCTS": "PRODUCTS",
-    "FEATURES": "FEATURES"
-  },
-  "FOOTER": {
-    "CONTACT US": "CONTACT US",
-    "JOIN TELEGRAM": "JOIN TELEGRAM"
-  },
-  "MAIN": {
-    "_INTRO": "Online Gaming Platform<br>with Crypto Loans",
-    "_OUR_PRODUCTS": {
-      "TITLE": "Our Products",
-      "NWALLET": "N-Wallet acts as the authenticator to log in to NPoker, NCasino, and NGame. N-Wallet holders can simply press the \"Login with N-Wallet\" button to access the services.",
-      "NPOKER": "NPoker is part of GGNetwork, world's leading provider of network poker software. GGNetwork's pool of 5,000 simultaneous players will be available for NPoker players through the USD currency. ",
-      "NCASINO": "NCasino is an online casino offering a variety of casino games including Sports, Live Dealers, Slots, and Fishing Games. The game selection will be made and maintained by industry experts to provide players with the most popular games on the market at all times."
-    },
-    "_MOBILE_APPS": {
-      "TITLE01": "Get free loans",
-      "TITLE02": "for games.",
-      "DESCRIPTION": "Download NWallet app for iOS and Android"
-    },
-    "_COMPARISON": {
-      "VS_BITCOIN": "VS<br>BITCOIN",
-      "VS_BITCOIN_DESCRIPTION": "While Bitcoin is the most widely known crypto currency in the market, it's high cost of transaction and lack of privacy makes it unsuitable for gaming transactions. Further, Bitcoin lacks smart contracts while NCN comes with a bespoke N-Fair smart contracts specifically for gaming.",
-      "VS_ETHEREUM_MONERO": "VS<br>ETHEREUM, MONERO",
-      "VS_ETHEREUM_MONERO_DESCRIPTION": "Ethereum and Monero are both Proof-of-Work crypto currencies. NCN's N-PoS will not only guarantee speeds higher than both, but will reward token holders with greater amounts, befitting of the high standards of the gaming industry.",
-      "VS_NEO_CARDANO": "VS<br>NEO, CARDANO",
-      "VS_NEO_CARDANO_DESCRIPTION": "Both Neo and Cardano are 2nd generation of crypto currencies that has gained recent popularity. NCN, with built-in Privacy and State Channel technology, is technologically more suited for gaming."
-    },
-    "_ROADMAP": {
-      "TITLE_01": "BUILD<br class='hidden-m'>FOUNDATIONS",
-      "TITLE_02": "NCOIN<br class='hidden-m'>WALLET",
-      "TITLE_03": "TEST<br class='hidden-m'>NETWORK",
-      "TITLE_04": "EXPAND<br class='hidden-m'>NETWORK",
-      "TITLE_05": "LAUNCH<br class='hidden-m'>PLATFORM",
-      "DESCRIPTION_01_01": "NPoker launches on GGNetwork",
-      "DESCRIPTION_01_02": "Off-chain NCN Wallet (Alpha)",
-      "DESCRIPTION_02": "Off-chain NCN Wallet (Beta)",
-      "DESCRIPTION_03_01": "NCoin Network TestNet",
-      "DESCRIPTION_03_02": "On-chain NCN Wallet (Beta)",
-      "DESCRIPTION_03_03": "NPoker (Beta)",
-      "DESCRIPTION_04_01": "NCoin Network Mainnet",
-      "DESCRIPTION_04_02": "On-Chain NCN Wallet (Live)",
-      "DESCRIPTION_04_03": "NPoker (Live)",
-      "DESCRIPTION_04_04": "NGame Platform (Beta)",
-      "DESCRIPTION_05": "NGame Platform (Live)"
-    },
-    "_TOKENSALE": {
-      "DESCRIPTION_01": "No more tokens will be created for the token sale after the hard cap of 520,000,000 tokens is met. Token distribution will start 24 hours after the token sale to the ETH wallets provided, and distribution of tokens sold during the token sale  to the ETH wallets will be completed within 7 days after the end date of the sale.",
-      "DESCRIPTION_02": "The distribution of tokens will officially end on 14 July 2018, and tokens will be created during this distribution period according to the token distribution plan. A total of 800,000,000 tokens will be created, and no more tokens will be created or distributed after this point.",
-      "DESCRIPTION_03": "During PRE SALE we offer a bonus of 25% for early investors"
-    },
-    "_INVESTMENT": {
-      "DESCRIPTION_01_01": "We are veterans in the industry, running an established, profitable company",
-      "DESCRIPTION_01_02": "​NCN will be integrated to all NSUS products, and will be used immediately by over 1M+ users",
-      "DESCRIPTION_01_03": "We will leverage our 50+ partner companies world-wide for a fast adoption",
-      "DESCRIPTION_02_01": "The gaming industry has been an early adoptor of crypto currency",
-      "DESCRIPTION_02_02": "NSUS Group has close ties with global exchanges​",
-      "DESCRIPTION_02_03": "NCN will be listed on multiple globally renowed exchanges by Q3 2018",
-      "DESCRIPTION_03_01": "NCN provides a masternode staking program",
-      "DESCRIPTION_03_02": "Expected returns of 5%~8% upon full activation of NCN",
-      "DESCRIPTION_04_01": "20% return on NGP revenue through AirDrop, Jackpots, etc.",
-      "DESCRIPTION_04_02": "Returns will create a virtuous cycle between NCoin, NCN Wallet, NPoker, and NGame Platform"
-    },
-
-    "_DATE_YQ": "{{ Y }}<br>Q{{ Q }}",
-    "_DATE_RANGE_DMY": "{{ D1 }} {{ M1 }} - {{ D2 }} {{ M2 }} {{ Y }}",
-    "_NCN_TOKEN_AMOUNT": "{{ amount }} NCN tokens",
-    "MORE": "MORE",
-    "Token Price": "Token Price",
-    "Token Name": "Token Name",
-    "Ticket Name": "Ticket Name",
-    "Technology": "Technology",
-    "Type of Supply": "Type of Supply",
-    "Fixed": "Fixed",
-    "Token Features": "Token Features",
-    "Anonymous, Pos, N-Fair": "Anonymous, Pos, N-Fair",
-    "Total Supply": "Total Supply",
-    "Soft Cap": "Soft Cap",
-    "Hard Cap": "Hard Cap",
-    "TGE Date": "TGE Date",
-    "Accepted Currency": "Accepted Currency",
-    "BTC, ETH, and 30+ altcoins": "BTC, ETH, and 30+ altcoins",
-
-    "BONUS": "BONUS",
-    "TOKEN SALE": "TOKEN SALE",
-    "TOKEN SALE DETAILS": "TOKEN SALE DETAILS",
-    "WHITEPAPER": "WHITEPAPER",
-    "DOWNLOAD_WHITEPAPER": "Download Whitepaper",
-    "EMAIL ADDRESS": "EMAIL ADDRESS",
-    "SUBSCRIBE": "SUBSCRIBE",
-    "LEARN MORE": "LEARN MORE",
-    "ROADMAP": "ROADMAP",
-    "PRE SALE": "PRE SALE",
-    "Start Date": "Start Date",
-    "End Date": "End Date",
-    "Investment Highlights": "Investment Highlights",
-    "Company with History": "Company with History",
-    "Exchange Listing": "Exchange Listing",
-    "N-PoS Staking Program": "N-PoS Staking Program",
-    "NGP Revenue Return": "NGP Revenue Return",
-    "TEAM": "TEAM",
-    "Founder & Managing Director": "Founder<br class='hidden-m'>&<br class='hidden-m'>Managing Director",
-    "Co-Founder & Product Director": "Co-Founder<br class='hidden-m'>&<br class='hidden-m'>Product Director",
-    "Chief Intelligence Office": "Chief Intelligence Office",
-    "Chief Technical Officer": "Chief Technical Officer",
-    "Chief Financial Officer": "Chief Financial Officer"
-  }
+	"HEADER": {
+		"HOME": "HOME",
+		"ABOUT": "ABOUT",
+		"PRODUCTS": "PRODUCTS",
+		"FEATURES": "FEATURES"
+	},
+	"FOOTER": "info@ncoin.com",
+	"MAIN": {
+		"_INTRO": "Online Gaming Platform<br>with Crypto Loans",
+		"_OUR_PRODUCTS": {
+			"TITLE": "Our Products",
+			"NWALLET": "N-Wallet acts as the authenticator to log in to NPoker, NCasino, and NGame. N-Wallet holders can simply press the \"Login with N-Wallet\" button to access the services.",
+			"NPOKER": "NPoker is part of GGNetwork, world's leading provider of network poker software. GGNetwork's pool of 5,000 simultaneous players will be available for NPoker players through the USD currency. ",
+			"NCASINO": "NCasino is an online casino offering a variety of casino games including Sports, Live Dealers, Slots, and Fishing Games. The game selection will be made and maintained by industry experts to provide players with the most popular games on the market at all times."
+		},
+		"_MOBILE_APPS": {
+			"TITLE01": "Get free loans",
+			"TITLE02": "for games.",
+			"DESCRIPTION": "Download NWallet app for iOS and Android"
+		},
+		"_FEATURES": {
+			"TITLE": "Features",
+			"SUB01": "70+cryptocurrencies",
+			"SUB02": "Gaming friendly UX",
+			"SUB03": "0% user’s fund theft",
+			"LOAN_TITLE": "Loan Chips with Crypto",
+			"LOAN_DESCRIPTION": "Get an instant loan within few seconds.<br>There is no verification and no hidden charges, so players can start playing immediately with the cryptos in their wallet.<br>Players can deposit with various currencies supported and be returned the full principal as soon as repayment is made.",
+			"BUY_TITLE": "Buy/Sell Chips with Best Rate",
+			"BUY_DESCRIPTION": "With our top-notch Exchange Rate Matching System, players can buy or sell chips with the best market rate available.<br>The system monitors major exchanges for their best offers and allows players to transact without the burden of keeping track of exchange rates."
+		},
+		"_ROADMAP": {
+			"TITLE": "Roadmap",
+			"TITLE_01": "Build<br>Foundations",
+			"TITLE_02": "NWallet<br>Beta",
+			"TITLE_03": "Launch<br>NPoker",
+			"TITLE_04": "Launch<br>NCasino",
+			"TITLE_05": "Launch<br>NGame",
+			"DESCRIPTION_01": "NWallet PoC",
+			"DESCRIPTION_02_01": "Support (BTC, ETH)",
+			"DESCRIPTION_02_02": "Login with NWallet",
+			"DESCRIPTION_03_01": "Loan chips",
+			"DESCRIPTION_03_02": "Buy/Sell chips",
+			"DESCRIPTION_03_03": "Exchange Rate Matching",
+			"DESCRIPTION_03_04": "Support 70+ cryptos"
+		},
+		"WHITEPAPER": "WHITEPAPER",
+		"DOWNLOAD_WHITEPAPER": "Download Whitepaper"
+	}
 }
