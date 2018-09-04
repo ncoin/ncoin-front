@@ -6,6 +6,10 @@
 @include font-face("poppin-extra-light", "./assets/font/Poppins-Light", bold, normal, eot woff ttf svg);
 @include font-face("noto-serif", "./assets/font/NotoSerif", normal, normal, eot woff ttf svg);
 @include font-face("noto-serif", "./assets/font/NotoSerif-Bold", bold, normal, eot woff ttf svg);
+@include font-face("roboto-condensed", "./assets/font/RobotoCondensed", normal, normal, eot woff ttf svg);
+@include font-face("roboto-condensed", "./assets/font/RobotoCondensed-Bold", bold, normal, eot woff ttf svg);
+@include font-face("roboto-condensed-light", "./assets/font/RobotoCondensed-Light", normal, normal, eot woff ttf svg);
+@include font-face("CenturyGothic", "./assets/font/CenturyGothic", normal, normal, eot woff ttf);
 
 * {
     box-sizing: border-box;
@@ -17,7 +21,6 @@ html, body {
     padding: 0;
     border: 0;
     outline: 0;
-    height: 100%;
     line-height: 1.5;
     color: #272624;
     scroll-behavior: smooth;
@@ -33,7 +36,7 @@ html, body, input, button {
     }
 
     @media (max-width: $media-width-m) {
-        font-size: $base-font-size * 0.9;
+        font-size: $base-font-size * 0.7;
     }
 }
 

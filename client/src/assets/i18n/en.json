@@ -1,31 +1,26 @@
 {
   "HEADER": {
+    "HOME": "HOME",
     "ABOUT": "ABOUT",
-    "FAQ": "FAQ",
-    "ROADMAP": "ROADMAP",
-    "TOKEN SALE": "TOKEN SALE"
+    "PRODUCTS": "PRODUCTS",
+    "FEATURES": "FEATURES"
   },
   "FOOTER": {
     "CONTACT US": "CONTACT US",
     "JOIN TELEGRAM": "JOIN TELEGRAM"
   },
   "MAIN": {
-    "_INTRO": {
-      "SLOGAN": "Building the digital blocks<br>for a new era of gaming",
-      "TITLE": "BESPOKE BLOCKCHAIN NETWORK",
-      "TITLE_SUB": "For the gaming industry",
-      "DESCRIPTION_01": "Since its inception, blockchain technology took the world by storm, and the cryptocurrency market cap reached $600 billion as of January 2018. While the coin market provided the driving force for such a revolution, other industries are also looking to embrace this phenomenon. Many analysts have been expecting the gaming industry to be the succeeding beneficiary. However, contrary to their belief, we have yet to see any surge in the gaming market.",
-      "DESCRIPTION_02": "Our group has been studying and experimenting blockchain for years, and have come to the conclusion that existing blockchain projects cannot overcome the obstacles inherent in online gaming.",
-      "DESCRIPTION_03": "As such, we are introducing a new bespoke blockchain network, the NCoin Network (NCN), tailor-made for the gaming industry."
+    "_INTRO": "Online Gaming Platform<br>with Crypto Loans",
+    "_OUR_PRODUCTS": {
+      "TITLE": "Our Products",
+      "NWALLET": "N-Wallet acts as the authenticator to log in to NPoker, NCasino, and NGame. N-Wallet holders can simply press the \"Login with N-Wallet\" button to access the services.",
+      "NPOKER": "NPoker is part of GGNetwork, world's leading provider of network poker software. GGNetwork's pool of 5,000 simultaneous players will be available for NPoker players through the USD currency. ",
+      "NCASINO": "NCasino is an online casino offering a variety of casino games including Sports, Live Dealers, Slots, and Fishing Games. The game selection will be made and maintained by industry experts to provide players with the most popular games on the market at all times."
     },
-    "_DIFFERENCE": {
-      "TITLE": "THE NCN DIFFERENCE",
-      "DESCRIPTION_01": "NCN is designed to include <strong>State Channel Technology</strong> which enables off-chain transactions, so that the blockchain will launch with minimal fee",
-      "DESCRIPTION_02": "NCN utilizes the <strong>N-PoS Algorithm</strong> to accomplish an overwhelming transaction speed over the PoW, PoS algorithm based blockchains such as Bitcoin and Ethereum",
-      "DESCRIPTION_03": "NCN is designed with <strong>Dynamic Sharding Technology</strong> so that mainnet goes live with scalability",
-      "DESCRIPTION_04": "NGP will return part of the revenue to the NCN community and token holders will be rewarded. <strong>PoS Staking system</strong> will allow holders to earn passive income",
-      "DESCRIPTION_05": "Using <strong>Zero-Knowledge Proof</strong>, NCN is cryptographically anonymous and transactions are untraceable",
-      "DESCRIPTION_06": "N-PoS takes use of provably fair concept to bring forth a patented technology, <strong>N-Fair Smart Contracts</strong>"
+    "_MOBILE_APPS": {
+      "TITLE01": "Get free loans",
+      "TITLE02": "for games.",
+      "DESCRIPTION": "Download NWallet app for iOS and Android"
     },
     "_COMPARISON": {
       "VS_BITCOIN": "VS<br>BITCOIN",
@@ -91,11 +86,10 @@
     "BTC, ETH, and 30+ altcoins": "BTC, ETH, and 30+ altcoins",
 
     "BONUS": "BONUS",
-    "NCOIN NETWORK": "NCOIN NETWORK",
     "TOKEN SALE": "TOKEN SALE",
     "TOKEN SALE DETAILS": "TOKEN SALE DETAILS",
-    "ONE PAGER": "ONE PAGER",
     "WHITEPAPER": "WHITEPAPER",
+    "DOWNLOAD_WHITEPAPER": "Download Whitepaper",
     "EMAIL ADDRESS": "EMAIL ADDRESS",
     "SUBSCRIBE": "SUBSCRIBE",
     "LEARN MORE": "LEARN MORE",

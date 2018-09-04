@@ -29,23 +29,6 @@ export class MainComponent implements AfterViewInit {
         return wt + wh * 0.8 > t && wt < t + h * 0.8;
     }
 
-    elementBGY(el: HTMLElement) {
-        const h = el.offsetHeight;
-        const t = el.offsetTop;
-        const wh = this.windowHeight;
-        const wt = this.scrollTop;
-
-        let ret = h * (1 - (wh + wt - t) / h);
-        ret = wh + wt - t - h;
-        if (wt < t && ret > 0 ) {
-            ret = 0;
-        } else if (wt >= t && wh > h) {
-            ret = ret + h - wh;
-        }
-
-        return ret;
-    }
-
     constructor(private elementRef: ElementRef, private cd: ChangeDetectorRef) {
     }
 
