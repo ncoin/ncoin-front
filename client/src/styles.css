@@ -55,12 +55,6 @@ html, body {
 html, body, input, button {
   font-family: poppin-extra-light, Helvetica, Arial, sans-serif;
   font-size: 16px; }
-  @media (max-width: 1200px) {
-    html, body, input, button {
-      font-size: 15.2px; } }
-  @media (max-width: 768px) {
-    html, body, input, button {
-      font-size: 11.2px; } }
 
 article, aside, footer, header, hgroup, main, nav, section {
   display: block; }
@@ -72,6 +66,10 @@ a, button {
   a:hover, a:focus, a:visited, button:hover, button:focus, button:visited {
     color: inherit;
     text-decoration: none; }
+
+@media (min-width: 1200px) {
+  .hidden-l {
+    display: none; } }
 
 @media (max-width: 1200px) {
   .hidden-m {

@@ -29,14 +29,6 @@ html, body {
 html, body, input, button {
     font-family: $base-font-family;
     font-size: $base-font-size;
-
-    @media (max-width: $media-width-l) {
-        font-size: $base-font-size * 0.95;
-    }
-
-    @media (max-width: $media-width-m) {
-        font-size: $base-font-size * 0.7;
-    }
 }
 
 article, aside, footer, header, hgroup, main, nav, section {
@@ -52,6 +44,12 @@ a, button {
         color: inherit;
         text-decoration: none;
     }
+}
+
+.hidden-l {
+	@media (min-width: $media-width-l) {
+		display: none;
+	}
 }
 
 .hidden-m {

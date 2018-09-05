@@ -43,12 +43,12 @@ section._intro {
         text-shadow: 0 0 120px rgba(255, 162, 52, 0.8); }
         @media (max-width: 1200px) {
           section._intro > div > ._intro > h1 {
-            font-size: 3.5em; } }
+            font-size: 2.5em; } }
     section._intro > div > ._btns {
       padding: 8em 0 0 11.3em; }
       @media (max-width: 1200px) {
         section._intro > div > ._btns {
-          padding: 4em 2em; } }
+          padding: 3em 2em 0; } }
       section._intro > div > ._btns > a {
         display: inline-block;
         border: 1px solid #d4a772;
@@ -79,6 +79,9 @@ section._our_products {
       margin: 0;
       text-align: center;
       font-weight: lighter; }
+      @media (max-width: 1200px) {
+        section._our_products > div ._header h1 {
+          font-size: 3em; } }
     section._our_products > div ul {
       list-style: none;
       margin: 0;
@@ -130,7 +133,8 @@ section._our_products {
         margin-top: 0;
         margin-left: auto; }
       section._our_products > div ul > li:last-child {
-        margin-right: auto; }
+        margin-right: auto;
+        margin-bottom: 0; }
       section._our_products > div > ul > li:before {
         position: absolute;
         left: 0;
@@ -165,7 +169,7 @@ section._mobile_apps {
   section._mobile_apps > div > ul {
     list-style: none;
     letter-spacing: normal;
-    padding: 0 0 0 45%;
+    padding: 0 1em 0 45%;
     margin: 13em 0 0 0; }
     section._mobile_apps > div > ul > li._title01 {
       color: #e9ceae;
@@ -208,7 +212,20 @@ section._mobile_apps {
       background-size: cover;
       height: 400px; }
       section._mobile_apps > div > ul {
-        margin-top: 8em; } }
+        margin-top: 6em; } }
+  @media (max-width: 768px) {
+    section._mobile_apps {
+      background-size: cover;
+      height: 400px; }
+      section._mobile_apps > div > ul {
+        padding-left: 35%; }
+        section._mobile_apps > div > ul > li._title01,
+        section._mobile_apps > div > ul > li._title02 {
+          font-size: 1.6em; }
+        section._mobile_apps > div > ul > li._appstore > a {
+          margin-right: 0; }
+        section._mobile_apps > div > ul > li > a > img {
+          width: 80%; } }
 section._features > div {
   padding: 0;
   width: 100%;
@@ -279,6 +296,13 @@ section._features > div {
         margin-left: auto; }
       section._features > div ul._detail > li:last-child {
         margin-right: auto; } }
+  @media (max-width: 768px) {
+    section._features > div ul._detail > li > h3 {
+      text-align: center; }
+    section._features > div ul._detail > li > img {
+      display: block;
+      margin: 1em auto;
+      float: none; } }
 section._features div._visit > ul > li {
   transform: scale(1);
   -webkit-transform: scale(1); }

@@ -55,7 +55,7 @@ section {
 					text-shadow: 0 0 120px rgba(255, 162, 52, 0.8);
 
 					@media (max-width: $media-width-l) {
-						font-size: 3.5em;
+						font-size: 2.5em;
 					}
 				}
 			}
@@ -64,7 +64,7 @@ section {
 				padding: 8em 0 0 11.3em;
 
 				@media (max-width: $media-width-l) {
-					padding: 4em 2em;
+					padding: 3em 2em 0;
 				}
 
 				> a {
@@ -108,6 +108,10 @@ section {
 					margin: 0;
 					text-align: center;
 					font-weight: lighter;
+
+					@media (max-width: $media-width-l) {
+						font-size: 3em;
+					}
 				}
 			}
 
@@ -178,6 +182,7 @@ section {
 				}
 				ul > li:last-child {
 					margin-right: auto;
+					margin-bottom: 0;
 				}
 
 				> ul > li:before {
@@ -233,7 +238,7 @@ section {
 			> ul {
 				list-style: none;
 				letter-spacing: normal;
-				padding: 0 0 0 45%;
+				padding: 0 1em 0 45%;
 				margin: 13em 0 0 0;
 
 				> li._title01 {
@@ -294,7 +299,29 @@ section {
 			height: 400px;
 
 			> div > ul {
-				margin-top: 8em;
+				margin-top: 6em;
+			}
+		}
+
+		@media (max-width: $media-width-m) {
+			background-size: cover;
+			height: 400px;
+
+			> div > ul {
+				padding-left: 35%;
+
+				> li._title01,
+				> li._title02 {
+					font-size: 1.6em;
+				}
+
+				> li._appstore > a {
+					margin-right: 0;
+				}
+
+				> li > a > img {
+					width: 80%;
+				}
 			}
 		}
 	}
@@ -402,6 +429,20 @@ section {
 				}
 				ul._detail > li:last-child {
 					margin-right: auto;
+				}
+			}
+
+			@media (max-width: $media-width-m) {
+				ul._detail > li {
+					> h3 {
+						text-align: center;
+					}
+
+					> img {
+						display: block;
+						margin: 1em auto;
+						float: none;
+					}
 				}
 			}
 		}
