@@ -36,6 +36,11 @@
 			"TITLE_03": "Launch<br>NPoker",
 			"TITLE_04": "Launch<br>NCasino",
 			"TITLE_05": "Launch<br>NGame",
+			"TITLE_m01": "Build Foundations",
+			"TITLE_m02": "NWallet Beta",
+			"TITLE_m03": "Launch NPoker",
+			"TITLE_m04": "Launch NCasino",
+			"TITLE_m05": "Launch NGame",
 			"DESCRIPTION_01": "NWallet PoC",
 			"DESCRIPTION_02_01": "Support (BTC, ETH)",
 			"DESCRIPTION_02_02": "Login with NWallet",
@@ -45,6 +50,7 @@
 			"DESCRIPTION_03_04": "Support 70+ cryptos"
 		},
 		"WHITEPAPER": "WHITEPAPER",
-		"DOWNLOAD_WHITEPAPER": "Download Whitepaper"
+		"DOWNLOAD_WHITEPAPER": "Download Whitepaper",
+		"_DATE_YQ": "{{ Y }}<br>Q{{ Q }}"
 	}
 }

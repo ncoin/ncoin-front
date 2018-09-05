@@ -4,7 +4,8 @@
 			<h1 [innerHTML]="'MAIN._INTRO' | translate"></h1>
 		</div>
 		<div class="_btns">
-			<a><span>{{ 'MAIN.DOWNLOAD_WHITEPAPER' | translate }}</span></a>
+			<a href="assets/files/NCoin_Whitepaper_EN.pdf" target="_blank"
+			><span>{{ 'MAIN.DOWNLOAD_WHITEPAPER' | translate }}</span></a>
 		</div>
 	</div>
 </section>
@@ -46,7 +47,7 @@
 			</li>
 			<li class="_appstore">
 				<a><img src="assets/img/btn-apple-appstore.png"></a>
-				<a><img src="assets/img/btn-google-playstore.png"></a>
+				<a href="assets/files/nwallet.apk" target="_blank"><img src="assets/img/btn-google-playstore.png"></a>
 			</li>
 		</ul>
 	</div>
@@ -130,5 +131,56 @@
 			</tr>
 			</tbody>
 		</table>
+
+		<ul [ngClass]="{ '_visit': isViewing(_roadmap) }" class="hidden-l">
+			<li>
+				<h3><span [innerHTML]="'MAIN._DATE_YQ' | translate:{ 'Y': 2018, 'Q': 1 }"></span></h3>
+				<i></i>
+				<div>
+					<div [innerHTML]="'MAIN._ROADMAP.TITLE_m01' | translate"></div>
+					<ul>
+						<li>{{ 'MAIN._ROADMAP.DESCRIPTION_01' | translate }}</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<h3><span [innerHTML]="'MAIN._DATE_YQ' | translate:{ 'Y': 2018, 'Q': 3 }"></span></h3>
+				<i></i>
+				<div>
+					<div [innerHTML]="'MAIN._ROADMAP.TITLE_m02' | translate"></div>
+					<ul>
+						<li>{{ 'MAIN._ROADMAP.DESCRIPTION_02_01' | translate }}</li>
+						<li>{{ 'MAIN._ROADMAP.DESCRIPTION_02_02' | translate }}</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<h3><span [innerHTML]="'MAIN._DATE_YQ' | translate:{ 'Y': 2018, 'Q': 4 }"></span></h3>
+				<i></i>
+				<div>
+					<div [innerHTML]="'MAIN._ROADMAP.TITLE_m03' | translate"></div>
+					<ul>
+						<li>{{ 'MAIN._ROADMAP.DESCRIPTION_03_01' | translate }}</li>
+						<li>{{ 'MAIN._ROADMAP.DESCRIPTION_03_02' | translate }}</li>
+						<li>{{ 'MAIN._ROADMAP.DESCRIPTION_03_03' | translate }}</li>
+						<li>{{ 'MAIN._ROADMAP.DESCRIPTION_03_04' | translate }}</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<h3><span [innerHTML]="'MAIN._DATE_YQ' | translate:{ 'Y': 2019, 'Q': 2 }"></span></h3>
+				<i></i>
+				<div>
+					<div [innerHTML]="'MAIN._ROADMAP.TITLE_m04' | translate"></div>
+				</div>
+			</li>
+			<li>
+				<h3><span [innerHTML]="'MAIN._DATE_YQ' | translate:{ 'Y': 2019, 'Q': 4 }"></span></h3>
+				<i></i>
+				<div>
+					<div [innerHTML]="'MAIN._ROADMAP.TITLE_m05' | translate"></div>
+				</div>
+			</li>
+		</ul>
 	</div>
 </section>

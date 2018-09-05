@@ -536,6 +536,113 @@ section {
 					}
 				}
 			}
+
+			@media (max-width: $media-width-l) {
+				> ul {
+					font-family: $article-font-family;
+					list-style: none;
+					margin: 0;
+					padding: 1em;
+					border: solid #d4a772;
+					border-width: 1px 0;
+
+					> li {
+						padding: 20px 0;
+						display: -webkit-flex;
+						display: flex;
+						-webkit-justify-content: space-between;
+						justify-content: space-between;
+						-webkit-align-items: flex-start;
+						align-items: flex-start;
+
+						> h3 {
+							display: -webkit-flex;
+							display: flex;
+							-webkit-align-items: center;
+							align-items: center;
+							width: 120px;
+							height: 120px;
+							border: 4px solid #D5B48D;
+							border-radius: 50%;
+							margin: 0;
+							-webkit-flex: none;
+							flex: none;
+
+							> span {
+								flex: 100%;
+								text-align: center;
+								display: block;
+								color: #fff;
+							}
+						}
+
+						> div {
+							display: -webkit-flex;
+							-webkit-align-items: center;
+							align-items: center;
+							flex: 1;
+							-webkit-flex: none;
+							flex: none;
+							max-width: calc(100% - 120px);
+							margin-top: 2.6em;
+							width: 260px;
+							display: block;
+
+							> div {
+								color: #DCB584;
+								font-size: 1.2em;
+								line-height: 1.8em;
+								text-align: left;
+								padding: 0 1em;
+
+								br {
+									display: none;
+								}
+							}
+
+							> ul {
+								text-align: left;
+								color: #fff;
+								line-height: 1.8;
+								padding: 0 0 0 3em;
+								font-size: 1em;
+								list-style: disc;
+
+								> li {
+									font-family: $base-font-family;
+								}
+							}
+						}
+
+						> i {
+							flex: 1;
+							display: block;
+							height: 0;
+							border: dashed #625441;
+							border-width: 1px 0;
+							margin-top: 59px;
+						}
+					}
+				}
+
+				> ul {
+					li {
+						opacity: 0;
+						@for $i from 1 through 6 {
+							&:nth-child(#{$i}) {
+								$s: $i * 0.1;
+								transition: opacity 1s ease #{$s}s;
+							}
+						}
+					}
+
+					&._visit {
+						li {
+							opacity: 1;
+						}
+					}
+				}
+			}
 		}
 	}
 }
