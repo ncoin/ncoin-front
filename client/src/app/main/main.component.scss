@@ -473,7 +473,7 @@ section {
 		background: #1f1c1a;
 
 		> div {
-			padding: 0 0 2em;
+			padding: 1em 0 2em;
 			width: 100%;
 			max-width: $content-max-width;
 
@@ -482,6 +482,7 @@ section {
 				margin: 0;
 				padding: 1em 0;
 				font-size: 4em;
+				font-weight: lighter;
 				color: #9e7747;
 			}
 

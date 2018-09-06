@@ -87,6 +87,9 @@ header {
           padding: 1em 0; }
           header > div nav > ul.open > li {
             display: block; }
+            header > div nav > ul.open > li:before, header > div nav > ul.open > li:after {
+              content: none;
+              display: none; }
           header > div nav > ul.open > li.hamburg > a > .bars {
             display: none; }
           header > div nav > ul.open > li.hamburg > a > .times {

@@ -5,7 +5,7 @@
 		</div>
 		<div class="_btns">
 			<a href="assets/files/NCoin_Whitepaper_EN.pdf"
-			   download><span>{{ 'MAIN.DOWNLOAD_WHITEPAPER' | translate }}</span></a>
+			   target="_blank"><span>{{ 'MAIN.DOWNLOAD_WHITEPAPER' | translate }}</span></a>
 		</div>
 	</div>
 </section>
@@ -47,7 +47,9 @@
 				<div>{{ 'MAIN._MOBILE_APPS.DESCRIPTION' | translate }}</div>
 			</li>
 			<li class="_appstore">
-				<a onclick="javascript:alert('Coming soon.')"><img src="assets/img/btn-apple-appstore.png"></a>
+				<a
+					href="itms-services://?action=download-manifest&url=https://www.ncoin.com/assets/files/manifest.plist"
+					><img src="assets/img/btn-apple-appstore.png"></a>
 				<a href="assets/files/nwallet.apk"
 				   download><img src="assets/img/btn-google-playstore.png"></a>
 			</li>
@@ -92,6 +94,7 @@
 	</div>
 </section>
 
+<a name="roadmap"></a>
 <section #_roadmap class="_roadmap">
 	<div>
 		<h2>{{ 'MAIN._ROADMAP.TITLE' | translate }}</h2>

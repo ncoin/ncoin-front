@@ -320,7 +320,7 @@ section._features div._visit > ul > li {
 section._roadmap {
   background: #1f1c1a; }
   section._roadmap > div {
-    padding: 0 0 2em;
+    padding: 1em 0 2em;
     width: 100%;
     max-width: 1200px; }
     section._roadmap > div > h2 {
@@ -328,6 +328,7 @@ section._roadmap {
       margin: 0;
       padding: 1em 0;
       font-size: 4em;
+      font-weight: lighter;
       color: #9e7747; }
     section._roadmap > div > table {
       border: 0;

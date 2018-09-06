@@ -122,6 +122,11 @@ header {
 
 					> li {
 						display: block;
+
+						&:before, &:after {
+							content: none;
+							display: none;
+						}
 					}
 
 					> li.hamburg {

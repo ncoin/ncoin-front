@@ -1,9 +1,9 @@
 {
 	"HEADER": {
 		"HOME": "HOME",
-		"ABOUT": "ABOUT",
 		"PRODUCTS": "PRODUCTS",
-		"FEATURES": "FEATURES"
+		"FEATURES": "FEATURES",
+		"ROADMAP": "ROADMAP"
 	},
 	"FOOTER": "info@ncoin.com",
 	"MAIN": {
