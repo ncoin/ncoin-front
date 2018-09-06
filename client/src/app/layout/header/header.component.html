@@ -3,22 +3,25 @@
 		<a class="_logo" href="/main#"></a>
 
 		<nav>
-			<ul>
+			<ul [ngClass]="{ 'open': isOpen }">
 				<li>
-					<a href="/main#">{{ 'HEADER.HOME' | translate }}</a>
+					<a href="/main#" (click)="closeMenu()">{{ 'HEADER.HOME' | translate }}</a>
 				</li>
 				<li>
-					<a>{{ 'HEADER.ABOUT' | translate }}</a>
+					<a href="/main#product" (click)="closeMenu()">{{ 'HEADER.PRODUCTS' | translate }}</a>
 				</li>
 				<li>
-					<a>{{ 'HEADER.PRODUCTS' | translate }}</a>
-				</li>
-				<li>
-					<a>{{ 'HEADER.FEATURES' | translate }}</a>
+					<a href="/main#features" (click)="closeMenu()">{{ 'HEADER.FEATURES' | translate }}</a>
 				</li>
 				<li class="github">
-					<a>
+					<a href="https://github.com/ncoin" target="_blank" (click)="closeMenu()">
 						<fa name="github" size="2x"></fa>
+					</a>
+				</li>
+				<li class="hamburg">
+					<a (click)="toggleMenu()">
+						<fa name="bars" size="2x" class="bars"></fa>
+						<fa name="times" size="2x" class="times"></fa>
 					</a>
 				</li>
 			</ul>

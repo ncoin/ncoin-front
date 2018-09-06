@@ -4,12 +4,13 @@
 			<h1 [innerHTML]="'MAIN._INTRO' | translate"></h1>
 		</div>
 		<div class="_btns">
-			<a href="assets/files/NCoin_Whitepaper_EN.pdf" target="_blank"
-			><span>{{ 'MAIN.DOWNLOAD_WHITEPAPER' | translate }}</span></a>
+			<a href="assets/files/NCoin_Whitepaper_EN.pdf"
+			   download><span>{{ 'MAIN.DOWNLOAD_WHITEPAPER' | translate }}</span></a>
 		</div>
 	</div>
 </section>
 
+<a name="product"></a>
 <section class="_our_products" #_our_products [ngClass]="{ '_visit': isViewing(_our_products) }">
 	<div>
 		<div class="_header">
@@ -46,13 +47,15 @@
 				<div>{{ 'MAIN._MOBILE_APPS.DESCRIPTION' | translate }}</div>
 			</li>
 			<li class="_appstore">
-				<a><img src="assets/img/btn-apple-appstore.png"></a>
-				<a href="assets/files/nwallet.apk" target="_blank"><img src="assets/img/btn-google-playstore.png"></a>
+				<a onclick="javascript:alert('Coming soon.')"><img src="assets/img/btn-apple-appstore.png"></a>
+				<a href="assets/files/nwallet.apk"
+				   download><img src="assets/img/btn-google-playstore.png"></a>
 			</li>
 		</ul>
 	</div>
 </section>
 
+<a name="features"></a>
 <section #_features class="_features">
 	<div>
 		<h2>{{ 'MAIN._FEATURES.TITLE' | translate }}</h2>
@@ -89,7 +92,6 @@
 	</div>
 </section>
 
-<a name="_roadmap"></a>
 <section #_roadmap class="_roadmap">
 	<div>
 		<h2>{{ 'MAIN._ROADMAP.TITLE' | translate }}</h2>

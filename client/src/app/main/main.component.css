@@ -16,7 +16,8 @@ section > div {
 section._intro {
   height: 594px;
   background: #000 url("../../assets/img/section01-bg.png") no-repeat 50% bottom;
-  color: #fff; }
+  color: #fff;
+  margin-top: 64px; }
   @media (max-width: 1200px) {
     section._intro {
       background-size: auto 80%;
@@ -77,7 +78,7 @@ section._intro {
             display: block;
             background: rgba(75, 67, 52, 0.8); } }
 section._our_products {
-  padding-bottom: 3em;
+  padding: 1em 0 3em;
   background: #f2f2f2; }
   section._our_products > div {
     max-width: 1200px;
@@ -237,13 +238,15 @@ section._mobile_apps {
         section._mobile_apps > div > ul > li > a > img {
           width: 80%; } }
 section._features > div {
-  padding: 0;
+  padding: 1em 0 0;
   width: 100%;
   max-width: 1200px; }
   section._features > div h2 {
     text-align: center;
-    margin: 1em 0;
-    font-size: 3em;
+    margin: 0;
+    padding: 1em 0;
+    font-size: 4em;
+    font-weight: lighter;
     color: #9e7747; }
   section._features > div ul {
     list-style: none;
@@ -291,21 +294,19 @@ section._features > div {
     transform: scale(0);
     transition: transform 1s ease; }
   @media (max-width: 1200px) {
-    section._features > div {
-      padding: 1em 0; }
-      section._features > div ul > li {
-        float: none; }
-      section._features > div ul._sub > li {
-        padding: 0; }
-      section._features > div ul._detail {
-        margin: 0 auto; }
-      section._features > div ul._detail > li {
-        width: 90%;
-        margin: 2em auto; }
-      section._features > div ul._detail > li:first-child {
-        margin-left: auto; }
-      section._features > div ul._detail > li:last-child {
-        margin-right: auto; } }
+    section._features > div ul > li {
+      float: none; }
+    section._features > div ul._sub > li {
+      padding: 0; }
+    section._features > div ul._detail {
+      margin: 0 auto; }
+    section._features > div ul._detail > li {
+      width: 90%;
+      margin: 2em auto; }
+    section._features > div ul._detail > li:first-child {
+      margin-left: auto; }
+    section._features > div ul._detail > li:last-child {
+      margin-right: auto; } }
   @media (max-width: 768px) {
     section._features > div ul._detail > li > h3 {
       text-align: center; }
@@ -319,13 +320,14 @@ section._features div._visit > ul > li {
 section._roadmap {
   background: #1f1c1a; }
   section._roadmap > div {
-    padding: 1em 0 2em;
+    padding: 0 0 2em;
     width: 100%;
     max-width: 1200px; }
     section._roadmap > div > h2 {
       text-align: center;
-      margin: 0.5em 0 1em;
-      font-size: 3em;
+      margin: 0;
+      padding: 1em 0;
+      font-size: 4em;
       color: #9e7747; }
     section._roadmap > div > table {
       border: 0;

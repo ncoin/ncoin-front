@@ -1,5 +1,9 @@
 header {
-  background: #000 url("../../../assets/img/header-bg.png") no-repeat 50% bottom; }
+  background: #000 url("../../../assets/img/header-bg.png") no-repeat 50% bottom;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0; }
   header > div {
     max-width: 1200px;
     margin: 0 auto;
@@ -21,12 +25,9 @@ header {
       background: url("../../../assets/img/header-logo.png") no-repeat center; }
       @media (max-width: 1200px) {
         header > div ._logo {
-          margin-left: 0; } }
+          margin-left: -24px; } }
     header > div nav {
       padding: 0 10px; }
-      @media (max-width: 1200px) {
-        header > div nav {
-          display: none; } }
       header > div nav > ul {
         display: -webkit-flex;
         display: flex;
@@ -73,5 +74,44 @@ header {
             bottom: -23px; }
         header > div nav > ul li.github > a {
           padding: 4px 24px; }
+        header > div nav > ul li.hamburg {
+          display: none; }
+      @media (max-width: 1200px) {
+        header > div nav > ul {
+          position: absolute;
+          top: 64px;
+          right: 0;
+          width: 100%;
+          background: #000; }
+        header > div nav > ul.open {
+          padding: 1em 0; }
+          header > div nav > ul.open > li {
+            display: block; }
+          header > div nav > ul.open > li.hamburg > a > .bars {
+            display: none; }
+          header > div nav > ul.open > li.hamburg > a > .times {
+            display: inline; }
+        header > div nav > ul > li {
+          float: none;
+          width: 100%;
+          text-align: center;
+          display: none; }
+          header > div nav > ul > li.github > a,
+          header > div nav > ul > li > a {
+            padding: 10px 24px; }
+        header > div nav > ul > li.hamburg {
+          position: absolute;
+          display: inline;
+          width: auto;
+          top: -50px;
+          right: 0;
+          padding: 0 10px; }
+          header > div nav > ul > li.hamburg:before, header > div nav > ul > li.hamburg:after {
+            content: none; }
+          header > div nav > ul > li.hamburg > a {
+            display: inline;
+            padding: 0; }
+          header > div nav > ul > li.hamburg > a > .times {
+            display: none; } }
 
 /*# sourceMappingURL=header.component.css.map */

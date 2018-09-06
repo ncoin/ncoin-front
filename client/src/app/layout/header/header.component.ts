@@ -1,12 +1,23 @@
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 
 
 @Component({
-    selector: 'app-header',
-    templateUrl: './header.component.html',
-    styleUrls: ['./header.component.scss']
+	selector: 'app-header',
+	templateUrl: './header.component.html',
+	styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-    constructor() {
-    }
+	public isOpen: boolean;
+
+	constructor() {
+		this.isOpen = false;
+	}
+
+	toggleMenu() {
+		this.isOpen = !this.isOpen;
+	}
+
+	closeMenu() {
+		this.isOpen = false;
+	}
 }

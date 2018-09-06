@@ -24,6 +24,7 @@ section {
 		height: 594px;
 		background: #000 url('../../assets/img/section01-bg.png') no-repeat 50% bottom;
 		color: #fff;
+		margin-top: 64px;
 
 		@media (max-width: $media-width-l) {
 			background-size: auto 80%;
@@ -106,7 +107,7 @@ section {
 	}
 
 	&._our_products {
-		padding-bottom: 3em;
+		padding: 1em 0 3em;
 		background: #f2f2f2;
 
 		> div {
@@ -341,14 +342,16 @@ section {
 
 	&._features {
 		> div {
-			padding: 0;
+			padding: 1em 0 0;
 			width: 100%;
 			max-width: $content-max-width;
 
 			h2 {
 				text-align: center;
-				margin: 1em 0;
-				font-size: 3em;
+				margin: 0;
+				padding: 1em 0;
+				font-size: 4em;
+				font-weight: lighter;
 				color: #9e7747;
 			}
 
@@ -419,8 +422,6 @@ section {
 			}
 
 			@media (max-width: $media-width-l) {
-				padding: 1em 0;
-
 				ul > li {
 					float: none;
 				}
@@ -472,14 +473,15 @@ section {
 		background: #1f1c1a;
 
 		> div {
-			padding: 1em 0 2em;
+			padding: 0 0 2em;
 			width: 100%;
 			max-width: $content-max-width;
 
 			> h2 {
 				text-align: center;
-				margin: 0.5em 0 1em;
-				font-size: 3em;
+				margin: 0;
+				padding: 1em 0;
+				font-size: 4em;
 				color: #9e7747;
 			}
 

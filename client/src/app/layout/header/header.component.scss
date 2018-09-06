@@ -2,6 +2,10 @@
 
 header {
 	background: #000 url("../../../assets/img/header-bg.png") no-repeat 50% bottom;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	top: 0;
 
 	> div {
 		max-width: $content-max-width;
@@ -25,16 +29,12 @@ header {
 			background: url("../../../assets/img/header-logo.png") no-repeat center;
 
 			@media (max-width: $media-width-l) {
-				margin-left: 0;
+				margin-left: -24px;
 			}
 		}
 
 		nav {
 			padding: 0 10px;
-
-			@media (max-width: $media-width-l) {
-				display: none;
-			}
 
 			> ul {
 				display: -webkit-flex;
@@ -100,6 +100,73 @@ header {
 				li.github {
 					> a {
 						padding: 4px 24px;
+					}
+				}
+
+				li.hamburg {
+					display: none;
+				}
+			}
+
+			@media (max-width: $media-width-l) {
+				> ul {
+					position: absolute;
+					top: 64px;
+					right: 0;
+					width: 100%;
+					background: #000;
+				}
+
+				> ul.open {
+					padding: 1em 0;
+
+					> li {
+						display: block;
+					}
+
+					> li.hamburg {
+						> a > .bars {
+							display: none;
+						}
+
+						> a > .times {
+							display: inline;
+						}
+					}
+				}
+
+				> ul > li {
+					float: none;
+					width: 100%;
+					text-align: center;
+					display: none;
+
+					&.github > a,
+					> a {
+						padding: 10px 24px;
+					}
+				}
+
+				> ul > li.hamburg {
+					position: absolute;
+					display: inline;
+					width: auto;
+					top: -50px;
+					right: 0;
+					padding: 0 10px;
+
+					&:before,
+					&:after {
+						content: none;
+					}
+
+					> a {
+						display: inline;
+						padding: 0;
+					}
+
+					> a > .times {
+						display: none;
 					}
 				}
 			}
