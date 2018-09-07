@@ -2,7 +2,6 @@ import {
 	Component, HostListener, OnInit, ElementRef, AfterViewChecked, AfterContentInit, AfterContentChecked,
 	AfterViewInit, ChangeDetectorRef
 } from '@angular/core';
-import {element} from 'protractor';
 
 @Component({
 	selector: 'app-main',
