@@ -1,6 +1,5 @@
 import {
-	Component, HostListener, OnInit, ElementRef, AfterViewChecked, AfterContentInit, AfterContentChecked,
-	AfterViewInit, ChangeDetectorRef
+	Component, HostListener, ElementRef, AfterViewInit, ChangeDetectorRef
 } from '@angular/core';
 
 @Component({
