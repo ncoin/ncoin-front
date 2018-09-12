@@ -9,7 +9,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * angular
 
 ## Getting Started
-
+1. Download and install the LTS version from [nodejs.org](https://www.nodejs.org/).
+2. Run `npm install -g angular`.
+3. Run `npm install -g yarn`.
+4. Run `yarn install`.
+5. Run `yarn start`.
 
 ## Development server
 
