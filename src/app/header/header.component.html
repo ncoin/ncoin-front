@@ -5,19 +5,34 @@
 		<nav>
 			<ul [ngClass]="{ 'open': isOpen }">
 				<li>
-					<a href="/#" (click)="closeMenu()">{{ 'HEADER.HOME' | translate }}</a>
+					<a href="/#" 
+						(click)="closeMenu()"
+						onclick="gtag('event','CLICK',{'event_category':'HEADER_MENU','event_label':'HOME_Click'});"
+					>{{ 'HEADER.HOME' | translate }}</a>
 				</li>
 				<li>
-					<a href="/#product" (click)="closeMenu()">{{ 'HEADER.PRODUCTS' | translate }}</a>
+					<a href="/#product" 
+						(click)="closeMenu()"
+						onclick="gtag('event','CLICK',{'event_category':'HEADER_MENU','event_label':'PRODUCTS_Click'});"
+					>{{ 'HEADER.PRODUCTS' | translate }}</a>
 				</li>
 				<li>
-					<a href="/#features" (click)="closeMenu()">{{ 'HEADER.FEATURES' | translate }}</a>
+					<a href="/#features"  
+						(click)="closeMenu()"
+						onclick="gtag('event','CLICK',{'event_category':'HEADER_MENU','event_label':'FEATURES_Click'});"
+					>{{ 'HEADER.FEATURES' | translate }}</a>
 				</li>
 				<li>
-					<a href="/#roadmap" (click)="closeMenu()">{{ 'HEADER.ROADMAP' | translate }}</a>
+					<a href="/#roadmap"  
+						(click)="closeMenu()"
+						onclick="gtag('event','CLICK',{'event_category':'HEADER_MENU','event_label':'ROADMAP_Click'});"
+					>{{ 'HEADER.ROADMAP' | translate }}</a>
 				</li>
 				<li class="github">
-					<a href="https://github.com/ncoin" target="_blank" (click)="closeMenu()">
+					<a href="https://github.com/ncoin" target="_blank" 
+					   (click)="closeMenu()"
+					   onclick="gtag('event','CLICK',{'event_category':'HEADER_MENU','event_label':'GITHUB_Click'});"
+					>
 						<fa name="github" size="2x"></fa>
 					</a>
 				</li>
