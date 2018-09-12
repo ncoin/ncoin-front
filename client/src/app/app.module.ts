@@ -7,8 +7,6 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {AppComponent} from './app.component';
 
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
-import { HeaderComponent } from './layout/header/header.component';
-import { FooterComponent } from './layout/footer/footer.component';
 
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
@@ -20,8 +18,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 
 @NgModule({
 	declarations: [
-        AppComponent,
-        HeaderComponent,
+		AppComponent,
+		HeaderComponent,
+		FooterComponent,
 		MainComponent
 	],
 	imports: [
