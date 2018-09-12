@@ -15,6 +15,7 @@ log.txt
 *.sublime-workspace
 npm-debug.log*
 package-lock.json
+yarn.lock
 
 .idea/
 .sourcemaps/
