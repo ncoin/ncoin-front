@@ -1,14 +1,47 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Client</title>
-  <base href="/">
+	<meta charset="utf-8">
+	<title>NCoin - Online Gaming Platform with Crypto Loans</title>
+	<base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="NCoin,N-Wallet,NPoker,NCasino,NGame,Crypto,Loans,Ethereum,ERC20">
+	<meta name="description"
+		  content="Online Gaming Platform with Crypto Loans. N-Wallet acts as the authenticator to log in to NPoker, NCasino, and NGame. N-Wallet holders can simply press the 'Login with N-Wallet' button to access the services. NPoker is part of GGNetwork, world's leading provider of network poker software. GGNetwork's pool of 5,000 simultaneous players will be available for NPoker players through the USD currency. NCasino is an online casino offering a variety of casino games including Sports, Live Dealers, Slots, and Fishing Games. The game selection will be made and maintained by industry experts to provide players with the most popular games on the market at all times.">
+
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
-  <app-root></app-root>
+<app-root></app-root>
 </body>
+<script>
+	// Lazy Loading 처리
+	window.onload = function() {
+		setTimeout(function() {
+			var s = document.createElement('script');
+			s.type = 'text/javascript';
+			s.async = true;
+			s.src = 'https://www.googletagmanager.com/gtag/js?id=UA-125589834-1';
+			var x = document.getElementsByTagName('script')[0];
+			x.parentNode.insertBefore(s, x);
+		}, 1000);
+	}
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125589834-1"></script>-->
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-125589834-1');
+</script>
 </html>

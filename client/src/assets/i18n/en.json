@@ -1,0 +1,56 @@
+{
+	"HEADER": {
+		"HOME": "HOME",
+		"PRODUCTS": "PRODUCTS",
+		"FEATURES": "FEATURES",
+		"ROADMAP": "ROADMAP"
+	},
+	"FOOTER": "info@ncoin.com",
+	"MAIN": {
+		"_INTRO": "Online Gaming Platform<br>with Crypto Loans",
+		"_OUR_PRODUCTS": {
+			"TITLE": "Our Products",
+			"NWALLET": "N-Wallet acts as the authenticator to log in to NPoker, NCasino, and NGame. N-Wallet holders can simply press the \"Login with N-Wallet\" button to access the services.",
+			"NPOKER": "NPoker is part of GGNetwork, world's leading provider of network poker software. GGNetwork's pool of 5,000 simultaneous players will be available for NPoker players through the USD currency.",
+			"NCASINO": "NCasino is an online casino offering a variety of casino games including Sports, Live Dealers, Slots, and Fishing Games. The game selection will be made and maintained by industry experts to provide players with the most popular games on the market at all times."
+		},
+		"_MOBILE_APPS": {
+			"TITLE01": "Get free loans",
+			"TITLE02": "for games.",
+			"DESCRIPTION": "Download NWallet app for iOS and Android"
+		},
+		"_FEATURES": {
+			"TITLE": "Features",
+			"SUB01": "70+cryptocurrencies",
+			"SUB02": "Gaming friendly UX",
+			"SUB03": "0% user’s fund theft",
+			"LOAN_TITLE": "Loan Chips with Crypto",
+			"LOAN_DESCRIPTION": "Get an instant loan within few seconds.<br>There is no verification and no hidden charges, so players can start playing immediately with the cryptos in their wallet.<br>Players can deposit with various currencies supported and be returned the full principal as soon as repayment is made.",
+			"BUY_TITLE": "Buy/Sell Chips with Best Rate",
+			"BUY_DESCRIPTION": "With our top-notch Exchange Rate Matching System, players can buy or sell chips with the best market rate available.<br>The system monitors major exchanges for their best offers and allows players to transact without the burden of keeping track of exchange rates."
+		},
+		"_ROADMAP": {
+			"TITLE": "Roadmap",
+			"TITLE_01": "Build<br>Foundations",
+			"TITLE_02": "NWallet<br>Beta",
+			"TITLE_03": "Launch<br>NPoker",
+			"TITLE_04": "Launch<br>NCasino",
+			"TITLE_05": "Launch<br>NGame",
+			"TITLE_m01": "Build Foundations",
+			"TITLE_m02": "NWallet Beta",
+			"TITLE_m03": "Launch NPoker",
+			"TITLE_m04": "Launch NCasino",
+			"TITLE_m05": "Launch NGame",
+			"DESCRIPTION_01": "NWallet PoC",
+			"DESCRIPTION_02_01": "Support (BTC, ETH)",
+			"DESCRIPTION_02_02": "Login with NWallet",
+			"DESCRIPTION_03_01": "Loan chips",
+			"DESCRIPTION_03_02": "Buy/Sell chips",
+			"DESCRIPTION_03_03": "Exchange Rate Matching",
+			"DESCRIPTION_03_04": "Support 70+ cryptos"
+		},
+		"WHITEPAPER": "WHITEPAPER",
+		"DOWNLOAD_WHITEPAPER": "Download Whitepaper",
+		"_DATE_YQ": "{{ Y }}<br>Q{{ Q }}"
+	}
+}

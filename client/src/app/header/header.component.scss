@@ -1,0 +1,180 @@
+@import "../../assets/scss/variables";
+
+header {
+	background: #000 url("../../assets/img/header-bg.png") no-repeat 50% bottom;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	top: 0;
+
+	> div {
+		max-width: $content-max-width;
+		margin: 0 auto;
+		height: 64px;
+		border-bottom: 1px solid #b9965f;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: flex-end;
+		align-items: flex-end;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+
+		._logo {
+			display: block;
+			margin-left: 26px;
+			width: 190px;
+			height: 100%;
+			background: url("../../assets/img/header-logo.png") no-repeat center;
+
+			@media (max-width: $media-width-l) {
+				margin-left: -24px;
+			}
+		}
+
+		nav {
+			padding: 0 10px;
+
+			> ul {
+				display: -webkit-flex;
+				display: flex;
+				-webkit-align-items: flex-end;
+				align-items: flex-end;
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				> li {
+					position: relative;
+					margin: 0;
+					padding: 0 7px;
+
+					> a {
+						position: relative;
+						display: block;
+						padding: 8px 24px;
+						z-index: 1;
+						color: #fadca1;
+					}
+
+					&:before, &:after {
+						content: '';
+						display: block;
+						position: absolute;
+					}
+
+					&:before {
+						left: 15px;
+						right: 15px;
+						height: 0;
+						bottom: 0;
+						background: #b9965f;
+						transition: height 0.4s ease;
+					}
+
+					&:after {
+						left: 0;
+						right: 0;
+						height: 100px;
+						bottom: -26px;
+						opacity: 0;
+						background: url("../../assets/img/header-menu-glow.png") no-repeat 50% bottom;
+						transition: bottom 0.4s ease, opacity 0.4s ease;
+					}
+
+					&:hover {
+						&:before {
+							height: 3px;
+						}
+
+						&:after {
+							opacity: 1;
+							bottom: -23px;
+						}
+					}
+				}
+
+				li.github {
+					> a {
+						padding: 4px 24px;
+					}
+				}
+
+				li.hamburg {
+					display: none;
+				}
+			}
+
+			@media (max-width: $media-width-l) {
+				> ul {
+					position: absolute;
+					top: 64px;
+					right: 0;
+					width: 100%;
+					background: #000;
+				}
+
+				> ul.open {
+					padding: 1em 0;
+
+					> li {
+						display: block;
+
+						&:before, &:after {
+							content: none;
+							display: none;
+						}
+					}
+
+					> li.hamburg {
+						> a > .bars {
+							display: none;
+						}
+
+						> a > .times {
+							display: inline;
+						}
+					}
+				}
+
+				> ul > li {
+					float: none;
+					width: 100%;
+					text-align: center;
+					display: none;
+
+					&.github > a,
+					> a {
+						padding: 10px 24px;
+					}
+				}
+
+				> ul > li.hamburg {
+					position: absolute;
+					display: inline;
+					width: auto;
+					top: -50px;
+					right: 0;
+					padding: 0 10px;
+
+					&:before,
+					&:after {
+						content: none;
+					}
+
+					> a {
+						display: inline;
+						padding: 0;
+					}
+
+					> a > .times {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}

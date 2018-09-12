@@ -6,6 +6,10 @@
 @include font-face("poppin-extra-light", "./assets/font/Poppins-Light", bold, normal, eot woff ttf svg);
 @include font-face("noto-serif", "./assets/font/NotoSerif", normal, normal, eot woff ttf svg);
 @include font-face("noto-serif", "./assets/font/NotoSerif-Bold", bold, normal, eot woff ttf svg);
+@include font-face("roboto-condensed", "./assets/font/RobotoCondensed", normal, normal, eot woff ttf svg);
+@include font-face("roboto-condensed", "./assets/font/RobotoCondensed-Bold", bold, normal, eot woff ttf svg);
+@include font-face("roboto-condensed-light", "./assets/font/RobotoCondensed-Light", normal, normal, eot woff ttf svg);
+@include font-face("CenturyGothic", "./assets/font/CenturyGothic", normal, normal, eot woff ttf);
 
 * {
     box-sizing: border-box;
@@ -17,23 +21,14 @@ html, body {
     padding: 0;
     border: 0;
     outline: 0;
-    height: 100%;
     line-height: 1.5;
     color: #272624;
+    scroll-behavior: smooth;
 }
 
 html, body, input, button {
     font-family: $base-font-family;
     font-size: $base-font-size;
-    letter-spacing: 0.1em;
-
-    @media (max-width: $media-width-l) {
-        font-size: $base-font-size * 0.95;
-    }
-
-    @media (max-width: $media-width-s) {
-        font-size: $base-font-size * 0.9;
-    }
 }
 
 article, aside, footer, header, hgroup, main, nav, section {
@@ -48,5 +43,23 @@ a, button {
     &:hover, &:focus, &:visited {
         color: inherit;
         text-decoration: none;
+    }
+}
+
+.hidden-l {
+	@media (min-width: $media-width-l) {
+		display: none;
+	}
+}
+
+.hidden-m {
+    @media (max-width: $media-width-l) {
+        display: none;
+    }
+}
+
+.hidden-s {
+    @media (max-width: $media-width-m) {
+        display: none;
     }
 }

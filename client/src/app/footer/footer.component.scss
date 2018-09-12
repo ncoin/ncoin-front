@@ -1,0 +1,21 @@
+@import "../../assets/scss/variables";
+@import "../../assets/scss/mixins";
+
+footer {
+	background: #000000;
+
+    > div {
+        max-width: $content-max-width;
+        margin: 0 auto;
+		//padding: 25px 20px;
+
+        > h2 {
+            margin: 0 auto;
+            padding: 1em 0;
+            font-size: 2em;
+            color: #ac8a61;
+			font-weight: lighter;
+			text-align: center;
+        }
+    }
+}
