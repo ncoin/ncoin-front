@@ -6,10 +6,7 @@
     "ng": "ng",
     "start": "ng serve --host 0.0.0.0 --open",
     "build": "ng build --prod",
-    "stage": "ng build --prod --env=stage --sourcemaps=true",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "stage": "ng build --prod --env=stage --sourcemaps=true"
   },
   "private": true,
   "dependencies": {

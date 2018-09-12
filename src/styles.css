@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style _files */
 @font-face {
   font-family: "poppin-extra-light";
   font-style: normal;
@@ -10,16 +10,6 @@
   font-weight: bold;
   src: url("./assets/font/Poppins-Light.eot?") format("eot"), url("./assets/font/Poppins-Light.woff") format("woff"), url("./assets/font/Poppins-Light.ttf") format("truetype"), url("./assets/font/Poppins-Light.svg#poppin-extra-light") format("svg"); }
 @font-face {
-  font-family: "noto-serif";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/font/NotoSerif.eot?") format("eot"), url("./assets/font/NotoSerif.woff") format("woff"), url("./assets/font/NotoSerif.ttf") format("truetype"), url("./assets/font/NotoSerif.svg#noto-serif") format("svg"); }
-@font-face {
-  font-family: "noto-serif";
-  font-style: normal;
-  font-weight: bold;
-  src: url("./assets/font/NotoSerif-Bold.eot?") format("eot"), url("./assets/font/NotoSerif-Bold.woff") format("woff"), url("./assets/font/NotoSerif-Bold.ttf") format("truetype"), url("./assets/font/NotoSerif-Bold.svg#noto-serif") format("svg"); }
-@font-face {
   font-family: "roboto-condensed";
   font-style: normal;
   font-weight: normal;
@@ -29,16 +19,6 @@
   font-style: normal;
   font-weight: bold;
   src: url("./assets/font/RobotoCondensed-Bold.eot?") format("eot"), url("./assets/font/RobotoCondensed-Bold.woff") format("woff"), url("./assets/font/RobotoCondensed-Bold.ttf") format("truetype"), url("./assets/font/RobotoCondensed-Bold.svg#roboto-condensed") format("svg"); }
-@font-face {
-  font-family: "roboto-condensed-light";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/font/RobotoCondensed-Light.eot?") format("eot"), url("./assets/font/RobotoCondensed-Light.woff") format("woff"), url("./assets/font/RobotoCondensed-Light.ttf") format("truetype"), url("./assets/font/RobotoCondensed-Light.svg#roboto-condensed-light") format("svg"); }
-@font-face {
-  font-family: "CenturyGothic";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./assets/font/CenturyGothic.eot?") format("eot"), url("./assets/font/CenturyGothic.woff") format("woff"), url("./assets/font/CenturyGothic.ttf") format("truetype"); }
 * {
   box-sizing: border-box;
   outline: none; }
