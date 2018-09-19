@@ -151,6 +151,10 @@ section {
 				border-bottom: 1px solid #8f754d;
 				border-bottom-left-radius: 10px;
 				border-bottom-right-radius: 10px;
+
+				> h2 > img {
+					width: 80%;
+				}
 			}
 			ul > li:first-child {
 				margin-left: 63px;
